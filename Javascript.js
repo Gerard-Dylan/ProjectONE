@@ -2,7 +2,6 @@ const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 
 button.addEventListener("click", function (event) {
-    event.stopPropagation();
     dropdown.classList.toggle("show");
 });
 

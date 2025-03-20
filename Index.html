@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meilleurs adresses de restaurants.</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
+
+<header>
+    <nav>
+        <div class="dropdown">
+            <button>Je choisis ma bonne adresse !</button>
+
+            <div class="dropdown-content">
+                <div class="card-content">
+                    <label>
+                        <input type="checkbox" id="vegan"> Vegan
+                    </label>
+                </div>
+                <div class="card-content">
+                    <label for="foodType">Type de nourriture</label>
+                    <select id="foodType">
+                        <option value="">Sélectionner</option>
+                        <option value="français">Français</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="americain">Americain</option>
+                        <option value="indien">Indien</option>
+                        <option value="amazonie">Amazonien</option>
+                    </select>
+                </div>
+                <div class="card-content">
+                    <label for="sortOrder">Trier par</label>
+                    <select id="sortOrder">
+                        <option value="">Sélectionner</option>
+                        <option value="price_asc">Prix croissant</option>
+                        <option value="price_desc">Prix décroissant</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="applyFilter()">Appliquer</button>
+            </div>
+        </div>
+    </nav>
+</header>
 
 <body>
 
+
+
+
+    <script src="Javascript.js"></script>
+
 </body>
+
+
+<footer>
+    <p>© 2025 COTOREP K.L.A.D SQUAD </p>
+</footer>
+
+
 
 </html>

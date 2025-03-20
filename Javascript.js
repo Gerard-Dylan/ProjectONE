@@ -18,8 +18,8 @@ function applyFilter() {
     const sortOrder = document.getElementById('sortOrder').value;
 
 
-    if (isVegan && foodType !== "amazonie") {
-        console.log("Repas vegan Amazonien seulement.");
+    if (isVegan && foodType !== "vegan") {
+        console.log("Repas vegan seulement.");
         return;
 
     }

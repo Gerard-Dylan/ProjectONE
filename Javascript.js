@@ -18,8 +18,8 @@ function applyFilter() {
     const sortOrder = document.getElementById('sortOrder').value;
 
 
-    if (isVegan && foodType !== "vegan") {
-        console.log("Repas vegan seulement.");
+    if (isVegan && foodType !== "amazonie") {
+        console.log("Repas vegan Amazonien seulement.");
         return;
 
     }
@@ -30,6 +30,7 @@ function applyFilter() {
 
 }
 
+<<<<<<< HEAD
 /* Menu burger*/
 const navigationLateral = document.getElementById("jsNavigationLateral");
 const ouvertureDuMenu = document.getElementById("jsOuvertureDuMenu");
@@ -47,3 +48,25 @@ function fermeMenu() {
 / Cliquez pour ouvrir ou fermer le menu. */
 ouvertureDuMenu.onclick = ouvreMenu;
 fermetureLateral.onclick = fermeMenu;
+=======
+/* Navigation Menu burger */
+
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    sidenav.classList.add("active");
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    sidenav.classList.remove("active");
+}
+
+/
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718

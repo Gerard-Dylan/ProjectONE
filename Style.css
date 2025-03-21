@@ -37,9 +37,18 @@ body {
     letter-spacing: 0.05rem;
 }
 
+<<<<<<< HEAD
 /* navigation latéral */
 
 .cssNavigationLateral {
+=======
+/* Barre de navigation */
+
+
+
+/* Sidenav menu */
+.sidenav {
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718
     height: 100%;
     width: 250px;
     position: fixed;
@@ -51,7 +60,12 @@ body {
     transition: left 0.5s ease;
 }
 
+<<<<<<< HEAD
 .cssNavigationLateral a {
+=======
+/* Sidenav menu links */
+.sidenav a {
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -60,28 +74,50 @@ body {
     transition: 0.3s;
 }
 
+<<<<<<< HEAD
 .cssNavigationLateral a:hover {
     color: #111;
 }
 
 .cssNavigationLateral ul {
+=======
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+<<<<<<< HEAD
 
 .cssNavigationLateral.active {
     left: 0;
 }
 
 .cssNavigationLateral .close {
+=======
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
 }
 
+<<<<<<< HEAD
+=======
+/* Icône burger */
+>>>>>>> 076c7f8ca895a1e000d2d69775e17ce815a69718
 .burger-icon span {
     display: block;
     width: 35px;

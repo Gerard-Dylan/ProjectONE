@@ -8,7 +8,7 @@ body {
 }
 
 .nav_image {
-    background-image: url("foie-gras-1024x683.png");
+    background-image: url("/images/foie-gras-1024x683.png");
     background-size: cover;
     height: 150px;
 }

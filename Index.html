@@ -10,40 +10,59 @@
 
 <header>
     <nav>
-        <div class="dropdown">
-            <button>Je choisis ma bonne adresse !</button>
-
-            <div class="dropdown-content">
-                <div class="card-content">
-                    <label>
-                        <input type="checkbox" id="vegan"> Vegan
-                    </label>
-                </div>
-                <div class="card-content">
-                    <label for="foodType">Type de nourriture</label>
-                    <select id="foodType">
-                        <option value="">Sélectionner</option>
-                        <option value="français">Français</option>
-                        <option value="japonais">Japonais</option>
-                        <option value="americain">Americain</option>
-                        <option value="mexicain">Mexicain</option>
-                        <option value="pakistanais">Pakistanais</option>
-                        <option value="italien">Italien</option>
-                        <option value="vegan">Vegan</option>
-                    </select>
-                </div>
-                <div class="card-content">
-                    <label for="sortOrder">Trier par</label>
-                    <select id="sortOrder">
-                        <option value="">Sélectionner</option>
-                        <option value="price_asc">Prix croissant</option>
-                        <option value="price_desc">Prix décroissant</option>
-                    </select>
-                </div>
-                <button class="btn" onclick="applyFilter()">Appliquer</button>
-            </div>
+        <!-- ouverture et fermeture lateral du menu burger -->
+        <div id="jsNavigationLateral" class="cssNavigationLateral">
+            <a id="jsFermetureLateral" class="cssFermeture">x</a>
+            <!-- liste du menu burger -->
+            <ul>
+                <li><a href="">Acceuil</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">A propos</a></li>
+            </ul>
         </div>
+        <!-- Ceci est le bouton d'ouverture du menu burger -->
+        <a href="#" id="jsOuvertureDuMenu">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </nav>
+
+    <div class="dropdown">
+        <button>Je choisis ma bonne adresse !</button>
+
+        <div class="dropdown-content">
+            <div class="card-content">
+                <label>
+                    <input type="checkbox" id="vegan"> Vegan
+                </label>
+            </div>
+            <div class="card-content">
+                <label for="foodType">Type de nourriture</label>
+                <select id="foodType">
+                    <option value="">Sélectionner</option>
+                    <option value="français">Français</option>
+                    <option value="japonais">Japonais</option>
+                    <option value="americain">Americain</option>
+                    <option value="mexicain">Mexicain</option>
+                    <option value="pakistanais">Pakistanais</option>
+                    <option value="italien">Italien</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+            <div class="card-content">
+                <label for="sortOrder">Trier par</label>
+                <select id="sortOrder">
+                    <option value="">Sélectionner</option>
+                    <option value="price_asc">Prix croissant</option>
+                    <option value="price_desc">Prix décroissant</option>
+                </select>
+            </div>
+            <button class="btn" onclick="applyFilter()">Appliquer</button>
+        </div>
+    </div>
 
 </header>
 

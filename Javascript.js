@@ -199,7 +199,7 @@ function renderRestaurants(restaurantsList) {
 		// Je génére le contenu de mes restaurants.
 		restaurantDiv.innerHTML = `
             <h2>${restaurant.name}</h2>
-            <img src="${restaurant.src}" alt="${restaurant.alt}" />
+            <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
             <p>${restaurant.description}</p>
             <p class="price">Prix : ${restaurant.price}€</p>
         `;

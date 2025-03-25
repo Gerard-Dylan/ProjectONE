@@ -1,10 +1,129 @@
-body {
-    font-family: Montserrat, sans-serif;
+:root {
+    --primary-color: #708d57;
+    --secondary-color: #f5f1e3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "ArsenalSC";
+    src: url(./Fonts/ArsenalSC.ttf);
+}
+
+@font-face {
+    font-family: "RoadRage";
+    src: url(./Fonts/RoadRage.ttf);
+}
+
+.nav_image {
+    background-image: url("./images/foie-gras-1024x683.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+}
+
+header {
+
+    background-color: var(--primary-color);
+    text-align: center;
+
+    h1 {
+        font-family: ArsenalSC;
+        font-size: 45px;
+        background-color: var(--secondary-color);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 40px;
+        font-family: RoadRage;
+        background-color: var(--primary-color);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+
+.sidenav.active {
+    left: 0;
+}
+
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.burger_button {
+    display: block;
+    width: 30px;
+    margin-left: 35px;
+    padding-top: 30px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+
 }
 
 .dropdown {
+    font-family: ArsenalSC;
     position: relative;
     display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+button {
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    font-family: ArsenalSC;
+    font-size: 15px;
 }
 
 .dropdown-content {
@@ -35,57 +154,4 @@ body {
     border: none;
     cursor: pointer;
     letter-spacing: 0.05rem;
-}
-
-/* navigation latéral */
-
-.cssNavigationLateral {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -250px;
-    background-color: #e8e8e8;
-    padding-top: 60px;
-    transition: left 0.5s ease;
-}
-
-.cssNavigationLateral a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.cssNavigationLateral a:hover {
-    color: #111;
-}
-
-.cssNavigationLateral ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.cssNavigationLateral.active {
-    left: 0;
-}
-
-.cssNavigationLateral .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-}
-
-.burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
 }

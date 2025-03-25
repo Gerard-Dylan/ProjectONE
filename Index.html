@@ -8,27 +8,42 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
-<header>
-    <nav>
-        <!-- ouverture et fermeture lateral du menu burger -->
-        <div id="jsNavigationLateral" class="cssNavigationLateral">
-            <a id="jsFermetureLateral" class="cssFermeture">x</a>
-            <!-- liste du menu burger -->
+<nav>
+
+    <div class="nav_image">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
             <ul>
-                <li><a href="">Acceuil</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">A propos</a></li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">A propos</a></li>
             </ul>
         </div>
-        <!-- Ceci est le bouton d'ouverture du menu burger -->
-        <a href="#" id="jsOuvertureDuMenu">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </a>
-    </nav>
+        <div>
+            <a href="#" id="openBtn" class="burger_button">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+</nav>
+
+
+<header>
+
+    <h1>LES BONNES <br> ADRESSES</h1>
+
+    <p>Trouvez les adresses incontournables, des pépites cachées et des expériences culinaires uniques. Bon appétit !
+    </p>
+
+
+    <div class="header_image">
+        <img src="./images/image_header.jpeg" height="350px" width="300px">
+    </div>
 
     <div class="dropdown">
         <button>Je choisis ma bonne adresse !</button>
@@ -38,187 +53,74 @@
                 <label>
                     <input type="checkbox" id="vegan"> Vegan
                 </label>
+                =======
+                <div class="dropdown-content">
+                    <div class="card-content">
+                        <label>
+                            <input type="checkbox" id="vegan"> Vegan
+                        </label>
+                    </div>
+                    <div class="card-content">
+                        <label for="foodType">Type de nourriture</label>
+                        <select id="foodType">
+                            <option value="">Sélectionner</option>
+                            <option value="français">Français</option>
+                            <option value="japonais">Japonais</option>
+                            <option value="americain">Americain</option>
+                            <option value="mexicain">Mexicain</option>
+                            <option value="pakistanais">Pakistanais</option>
+                            <option value="italien">Italien</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                    </div>
+                    <div class="card-content">
+                        <label for="sortOrder">Trier par</label>
+                        <select id="sortOrder">
+                            <option value="">Sélectionner</option>
+                            <option value="price_asc">Prix croissant</option>
+                            <option value="price_desc">Prix décroissant</option>
+                        </select>
+                    </div>
+                    <button class="btn" onclick="applyFilter()">Appliquer</button>
+                    >>>>>>> d116c0c019b1a95f8bb6b40f315bfd8cc6de0200
+                </div>
+                <div class="card-content">
+                    <label for="foodType">Type de nourriture</label>
+                    <select id="foodType">
+                        <option value="">Sélectionner</option>
+                        <option value="français">Français</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="americain">Americain</option>
+                        <option value="indien">Indien</option>
+                        <option value="amazonie">Amazonien</option>
+                    </select>
+                </div>
+                <div class="card-content">
+                    <label for="sortOrder">Trier par</label>
+                    <select id="sortOrder">
+                        <option value="">Sélectionner</option>
+                        <option value="price_asc">Prix croissant</option>
+                        <option value="price_desc">Prix décroissant</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="applyFilter()">Appliquer</button>
             </div>
-            <div class="card-content">
-                <label for="foodType">Type de nourriture</label>
-                <select id="foodType">
-                    <option value="">Sélectionner</option>
-                    <option value="français">Français</option>
-                    <option value="japonais">Japonais</option>
-                    <option value="americain">Americain</option>
-                    <option value="mexicain">Mexicain</option>
-                    <option value="pakistanais">Pakistanais</option>
-                    <option value="italien">Italien</option>
-                    <option value="vegan">Vegan</option>
-                </select>
-            </div>
-            <div class="card-content">
-                <label for="sortOrder">Trier par</label>
-                <select id="sortOrder">
-                    <option value="">Sélectionner</option>
-                    <option value="price_asc">Prix croissant</option>
-                    <option value="price_desc">Prix décroissant</option>
-                </select>
-            </div>
-            <button class="btn" onclick="applyFilter()">Appliquer</button>
         </div>
-    </div>
+
+
+
 
 </header>
 
 <body>
-    <div class="Français">
-        <h1>Cuisine Française</h1>
-        <div id="one">
-            <p><b>Le Petit Bistro –</b> Un cadre intime pour savourer des plats traditionnels comme le
-                bœuf bourguignon et la tarte tatin.</p>
-            <img class="one-french"
-                src="/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg"
-                alt="photo de cuisine française 1" />
-        </div>
-        <div id="two">
-            <img class="two-french" src="/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg"
-                alt="photo de cuisine française 2" />
-            <p><b>Brasserie Saint-Germain –</b> Une cuisine raffinée avec des produits du terroir et des
-                vins soigneusement sélectionnés./p>
-        </div>
-    </div>
 
-
-    <div class="Japonais">
-        <h1>Cuisine Japonaise</h1>
-        <img class="one-japon"
-            src="/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg"
-            alt="photo de cuisine japonaise 1" />
-        <div id="one">
-            <p><b>Sakura Sushi –</b>Un bar à sushi où poissons frais et présentation élégante se
-                rencontrent pour une expérience gastronomique unique.</p>
-        </div>
-        <div id="two">
-            <img class="two-japon" src="/images/asian-rolls-with-herbs-spices.jpg" alt="photo de cuisine japonais 2" />
-            <p><b>Ramen Ichiban –</b>Savourez de délicieux bols de ramen aux bouillons parfumés et
-                aux nouilles faites maison.</p>
-        </div>
-    </div>
-
-
-    <div class="Americain">
-        <h1>Cuisine Américaine</h1>
-        <div class="one">
-            <img class="one-usa" src="/images/flat-lay-american-food-with-america-flag.jpg"
-                alt="photo de cuisine americain 1" />
-            <p><b>Burger Haven –</b>Savourez des burgers juteux, des frites croustillantes et des
-                milkshakes onctueux dans une ambiance rétro typiquement américaine.</p>
-        </div>
-
-        <div class="two">
-            <img class="two-usa" src="/images/meat-slices-sauce-with-mashed-potato.jpg"
-                alt="photo de cuisine americain 2" />
-            <p><b>Smokey BBQ House –</b>Dégustez des viandes fumées lentement, nappées de sauce
-                barbecue maison, dans un cadre chaleureux et convivial.</p>
-        </div>
-    </div>
-
-
-
-    <div class="Mexicain">
-        <h1>Cuisine Mexicaine Tex-Mex</h1>
-        <div class="one">
-            <div class="one">
-                <img class="one-mex" src="/images/mexican-food-blue-background.jpg"
-                    alt="photo de cuisine mexicaine 1" />
-                <p><b>El Rancho Grill –</b>Un mélange explosif de saveurs avec des tacos épicés, des fajitas
-                    grillées et des margaritas rafraîchissantes.</p>
-            </div>
-
-            <div class="two">
-                <div class="two">
-                    <img class="two-mex" src="/images/mexican-menu.jpg" alt="photo de cuisine mexicaine 2" />
-                    <p><b>MexiFusion –</b>Découvrez une cuisine tex-mex revisitée avec des ingrédients frais et
-                        une touche moderne.</p>
-                </div>
-            </div>
-
-
-
-            <div class="Pakistanais">
-                <h1>Cuisine Pakistanaise</h1>
-                <div class="one">
-                    <div class="one">
-                        <img class="one-paki" src="/images/duc-van-pWYRJOSPMcY-unsplash.jpg"
-                            alt="photo de cuisine pakistanais 2" />
-                        <p><b>Lahore Palace –</b>Un voyage culinaire avec des currys épicés, des grillades tandoori
-                            et des pains naan moelleux.</p>
-                    </div>
-
-                    <div class="two">
-                        <img class="two-paki" src="/images/magic-mary-nEOzmjguwO0-unsplash.jpg"
-                            alt="photo de cuisine pakistanais 2" />
-                        <p><b>Karachi Delight –</b>Une explosion de saveurs authentiques avec des plats mijotés et
-                            des épices traditionnelles du Pakistan</p>
-                    </div>
-                </div>
-
-
-
-                <div class="Italien">
-                    <h1>Cuisine Italienne</h1>
-                    <div class="one">
-                        <img class="one-italian" src="/images/tomatoes-raw-pasta-near-italian-food.jpg"
-                            alt="photo de cuisine italienne 2" />
-                        <p><b>Trattoria Bella –</b>Plongez dans l'Italie avec des pâtes fraîches, des pizzas au feu de
-                            bois et des tiramisus maison.</p>
-                    </div>
-
-                    <div class="two">
-                        <img class="two-italian"
-                            src="/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg"
-                            alt="photo de cuisine italienne 2" />
-                        <p><b>Osteria Napoli –</b>Un restaurant authentique où les saveurs méditerranéennes se
-                            marient à une ambiance familiale et chaleureuse.</p>
-                    </div>
-                </div>
-
-
-
-                <div class="Vegan">
-                    <h1>Cuisine Vegan</h1>
-                    <img class="one-vegy" src="/images/assortment-delicious-food-ingredients.jpg"
-                        alt="photo de cuisine végane 1" />
-                    <div class="one">
-                        <p><b>Green Delights –</b>Cuisine végane créative et gourmande, avec des ingrédients frais et
-                            locaux
-                            pour un
-                            plaisir 100% naturel.</p>
-                    </div>
-
-                    <div class="two">
-                        <img class="two-vegy" src="/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg"
-                            alt="photo de cuisine végane 2" />
-                        <div class="one">
-                            <p><b>Végét'Horizon –</b>Une expérience culinaire végane savoureuse, alliant fraîcheur,
-                                éthique
-                                et
-                                créativité.</p>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-
-
-
-
-                <script src="Javascript.js"></script>
+    <script src="Javascript.js"></script>
 
 </body>
 
 
 <footer>
-    <p>© 2025 COTOREP K.L.A.D SQUAD </p>
+    <p>© 2025 K.L.A.D SQUAD </p>
 </footer>
 
 

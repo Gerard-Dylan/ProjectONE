@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meilleurs adresses de restaurants.</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Road+Rage&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<header>
++<header>
     <nav></nav>
     <div class="dropdown">
         <button>Je choisis ma bonne adresse !</button>
@@ -49,165 +54,211 @@
 <body>
     <section>
         <div id="restaurant">
-            <div class="français">
-                <img class="one-french"
-                    src="/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.png"
-                    alt="photo de cuisine française 1" />
-                <div class="details-box">
-                    <h2>Cuisine Française</h2>
-                    <div id="btn-french-one">
-                        <ion-icon id="icon-french-one" name="chevron-down"></ion-icon>
+            <div id="restaurant-french">
+                <div class="francais"><!-- Conteneur images + text -->
+                    <div id="french-one-box"><!-- box images -->
+                        <img src="/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.png"
+                            alt="photo de cuisine française 1" /><!-- image du wrapper -->
                     </div>
-                    <div id="details-one">
-                        <p><b>Le Petit Bistro –</b> Un cadre intime pour savourer des plats traditionnels comme le
-                            bœuf bourguignon et la tarte tatin.
-                            Brasserie Saint-Germain Une cuisine raffinée avec des produits du terroir et des
-                            vins soigneusement sélectionnés.</p>
+                    <div class="detail-box-french1"><!-- titre + buttun -->
+                        <h2>Cuisine Française</h2>
+                        <div id="btn-french-one">
+                            <ion-icon id="icon-french-one" name="chevron-down"></ion-icon>
+                        </div>
+                        <div id="details-text-french-one">
+                            <p><b>Le Petit Bistro –</b> Un cadre intime pour savourer des plats traditionnels comme le
+                                bœuf bourguignon et la tarte tatin.
+                                Brasserie Saint-Germain Une cuisine raffinée avec des produits du terroir et des
+                                vins soigneusement sélectionnés.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="français2">
+                    <div id="french-two-box">
+                        <img src="/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg"
+                            alt="photo de cuisine française 2" />
+                    </div>
+                    <div class="detail-box-french2">
+                        <div id="btn-french-two">
+                            <ion-icon id="icon-french-two" name="chevron-down"></ion-icon>
+                        </div>
+                        <div id="details-text-french-two">
+                            <p><b>Le Petit Bistro –</b> Un cadre intime pour savourer des plats traditionnels comme le
+                                bœuf bourguignon et la tarte tatin.
+                                Brasserie Saint-Germain Une cuisine raffinée avec des produits du terroir et des
+                                vins soigneusement sélectionnés.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="restaurant-japan">
+                    <div class="japan"><!-- Conteneur images + text -->
+                        <div id="japan-box"><!-- box images -->
+                            <img src="/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg"
+                                alt="photo de cuisine japonaise 1" /><!-- image du wrapper -->
+                        </div>
+                        <div class="detail-box-japan"><!-- titre + buttun -->
+                            <h2>Cuisine japonaise</h2>
+                            <div id="btn-japan">
+                                <ion-icon id="icon-japan" name="chevron-down"></ion-icon>
+                            </div>
+                            <div id="details-text-japan">
+                                <p><b>Sakura Sushi –</b>Un bar à sushi où poissons frais et
+                                    présentation élégante se
+                                    rencontrent pour une expérience gastronomique unique.</p>
+                            </div>
+                        </div>
+
+                        <div class="japan-two">
+                            <img src="/images/asian-rolls-with-herbs-spices.jpg" alt="photo de cuisine japonais 2"
+                                data-japon-two class="two-japon" />
+                            <p><b>Ramen Ichiban –</b>Savourez de délicieux bols de ramen aux bouillons parfumés et
+                                aux nouilles faites maison.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- <div id="one">
 
-
-                <div id="two">
-                    <img class="two-french"
-                        src="/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg"
-                        alt="photo de cuisine française 2" />
-
-                </div>
-            </div>
-
-
-            <div class="japonais">
-                <h2>Cuisine Japonaise</h2>
-                <img src="/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg"
-                    alt="photo de cuisine japonaise 1" />
-                <div id="one" data-japon1 class="one-japon">
-                    <p><b>Sakura Sushi –</b>Un bar à sushi où poissons frais et présentation élégante se
-                        rencontrent pour une expérience gastronomique unique.</p>
-                </div>
-                <div id="two">
-                    <img src="/images/asian-rolls-with-herbs-spices.jpg" alt="photo de cuisine japonais 2" data-japon2
-                        class="two-japon" />
-                    <p><b>Ramen Ichiban –</b>Savourez de délicieux bols de ramen aux bouillons parfumés et
-                        aux nouilles faites maison.</p>
-                </div>
-            </div>
-
-
-            <div class="Americain">
-                <h2>Cuisine Américaine</h2>
-                <div class="one">
-                    <img class="one-usa" src="/images/flat-lay-american-food-with-america-flag.jpg"
-                        alt="photo de cuisine americain 1" />
-                    <p><b>Burger Haven –</b>Savourez des burgers juteux, des frites croustillantes et des
-                        milkshakes onctueux dans une ambiance rétro typiquement américaine.</p>
-                </div>
-
-                <div class="two">
-                    <img class="two-usa" src="/images/meat-slices-sauce-with-mashed-potato.jpg"
-                        alt="photo de cuisine americain 2" />
-                    <p><b>Smokey BBQ House –</b>Dégustez des viandes fumées lentement, nappées de sauce
-                        barbecue maison, dans un cadre chaleureux et convivial.</p>
-                </div>
-            </div>
-
-
-
-            <div class="Mexicain">
-                <h2>Cuisine Mexicaine Tex-Mex</h2>
-                <div class="one">
-                    <div class="one">
-                        <img class="one-mex" src="/images/mexican-food-blue-background.jpg"
-                            alt="photo de cuisine mexicaine 1" />
-                        <p><b>El Rancho Grill –</b>Un mélange explosif de saveurs avec des tacos épicés, des fajitas
-                            grillées et des margaritas rafraîchissantes.</p>
+            <div id="usa">
+                <div class="usa"><!-- Conteneur images + text -->
+                    <div id="usa-box"><!-- box images -->
+                        <img src="/images/flat-lay-american-food-with-america-flag.jpg"
+                            alt="photo de cuisine americaine 1" /><!-- image du wrapper -->
                     </div>
-
-                    <div class="two">
-                        <div class="two">
-                            <img class="two-mex" src="/images/mexican-menu.jpg" alt="photo de cuisine mexicaine 2" />
-                            <p><b>MexiFusion –</b>Découvrez une cuisine tex-mex revisitée avec des ingrédients frais et
-                                une touche moderne.</p>
+                    <div class="detail-box-usa"><!-- titre + buttun -->
+                        <h2>Cuisine américaine</h2>
+                        <div id="btn-usa">
+                            <ion-icon id="icon-usa" name="chevron-down"></ion-icon>
+                        </div>
+                        <div id="details-text-usa">
+                            <p><b>Sakura Sushi –</b>Un bar à sushi où poissons frais et présentation élégante se
+                                rencontrent pour une expérience gastronomique unique.</p>
                         </div>
                     </div>
 
 
 
-                    <div class="Pakistanais">
-                        <h2>Cuisine Pakistanaise</h2>
-                        <div class="one">
+                    <div class="usa-two">
+                        <img class="two-usa" src="/images/meat-slices-sauce-with-mashed-potato.jpg"
+                            alt="photo de cuisine americain 2" />
+                        <p><b>Smokey BBQ House –</b>Dégustez des viandes fumées lentement, nappées de sauce
+                            barbecue maison, dans un cadre chaleureux et convivial.</p>
+                    </div>
+                </div>
+
+                <!-- 
+
+                        <div class="Mexicain">
+                            <h2>Cuisine Mexicaine Tex-Mex</h2>
                             <div class="one">
-                                <img class="one-paki" src="/images/duc-van-pWYRJOSPMcY-unsplash.jpg"
-                                    alt="photo de cuisine pakistanais 2" />
-                                <p><b>Lahore Palace –</b>Un voyage culinaire avec des currys épicés, des grillades
-                                    tandoori
-                                    et des pains naan moelleux.</p>
-                            </div>
-
-                            <div class="two">
-                                <img class="two-paki" src="/images/magic-mary-nEOzmjguwO0-unsplash.jpg"
-                                    alt="photo de cuisine pakistanais 2" />
-                                <p><b>Karachi Delight –</b>Une explosion de saveurs authentiques avec des plats mijotés
-                                    et
-                                    des épices traditionnelles du Pakistan</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="Italien">
-                            <h2>Cuisine Italienne</h2>
-                            <div class="one">
-                                <img class="one-italian" src="/images/tomatoes-raw-pasta-near-italian-food.jpg"
-                                    alt="photo de cuisine italienne 2" />
-                                <p><b>Trattoria Bella –</b>Plongez dans l'Italie avec des pâtes fraîches, des pizzas au
-                                    feu
-                                    de
-                                    bois et des tiramisus maison.</p>
-                            </div>
-
-                            <div class="two">
-                                <img class="two-italian"
-                                    src="/ProjectONE/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg"
-                                    alt="photo de cuisine italienne 2" />
-                                <p><b>Osteria Napoli –</b>Un restaurant authentique où les saveurs méditerranéennes se
-                                    marient à une ambiance familiale et chaleureuse.</p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="Vegan">
-                            <h2>Cuisine Vegan</h2>
-                            <img class="one-vegy" src="/images/assortment-delicious-food-ingredients.jpg"
-                                alt="photo de cuisine végane 1" />
-                            <div class="one">
-                                <p><b>Green Delights –</b>Cuisine végane créative et gourmande, avec des ingrédients
-                                    frais
-                                    et
-                                    locaux
-                                    pour un
-                                    plaisir 100% naturel.</p>
-                            </div>
-
-                            <div class="two">
-                                <img class="two-vegy"
-                                    src="/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg"
-                                    alt="photo de cuisine végane 2" />
                                 <div class="one">
-                                    <p><b>Végét'Horizon –</b>Une expérience culinaire végane savoureuse, alliant
-                                        fraîcheur,
-                                        éthique
-                                        et
-                                        créativité.</p>
+                                    <img class="one-mex" src="/images/mexican-food-blue-background.jpg"
+                                        alt="photo de cuisine mexicaine 1" />
+                                    <p><b>El Rancho Grill –</b>Un mélange explosif de saveurs avec des tacos épicés, des
+                                        fajitas
+                                        grillées et des margaritas rafraîchissantes.</p>
                                 </div>
-                            </div>
+
+                                <div class="two">
+                                    <div class="two">
+                                        <img class="two-mex" src="/images/mexican-menu.jpg"
+                                            alt="photo de cuisine mexicaine 2" />
+                                        <p><b>MexiFusion –</b>Découvrez une cuisine tex-mex revisitée avec des
+                                            ingrédients
+                                            frais
+                                            et
+                                            une touche moderne.</p>
+                                    </div>
+                                </div>
 
 
-                        </div>
-                    </div> -->
+
+                                <div class="Pakistanais">
+                                    <h2>Cuisine Pakistanaise</h2>
+                                    <div class="one">
+                                        <div class="one">
+                                            <img class="one-paki" src="/images/duc-van-pWYRJOSPMcY-unsplash.jpg"
+                                                alt="photo de cuisine pakistanais 2" />
+                                            <p><b>Lahore Palace –</b>Un voyage culinaire avec des currys épicés, des
+                                                grillades
+                                                tandoori
+                                                et des pains naan moelleux.</p>
+                                        </div>
+
+                                        <div class="two">
+                                            <img class="two-paki" src="/images/magic-mary-nEOzmjguwO0-unsplash.jpg"
+                                                alt="photo de cuisine pakistanais 2" />
+                                            <p><b>Karachi Delight –</b>Une explosion de saveurs authentiques avec des
+                                                plats
+                                                mijotés
+                                                et
+                                                des épices traditionnelles du Pakistan</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="Italien">
+                                        <h2>Cuisine Italienne</h2>
+                                        <div class="one">
+                                            <img class="one-italian"
+                                                src="/images/tomatoes-raw-pasta-near-italian-food.jpg"
+                                                alt="photo de cuisine italienne 2" />
+                                            <p><b>Trattoria Bella –</b>Plongez dans l'Italie avec des pâtes fraîches,
+                                                des
+                                                pizzas
+                                                au
+                                                feu
+                                                de
+                                                bois et des tiramisus maison.</p>
+                                        </div>
+
+                                        <div class="two">
+                                            <img class="two-italian"
+                                                src="/ProjectONE/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg"
+                                                alt="photo de cuisine italienne 2" />
+                                            <p><b>Osteria Napoli –</b>Un restaurant authentique où les saveurs
+                                                méditerranéennes
+                                                se
+                                                marient à une ambiance familiale et chaleureuse.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="Vegan">
+                                        <h2>Cuisine Vegan</h2>
+                                        <img class="one-vegy" src="/images/assortment-delicious-food-ingredients.jpg"
+                                            alt="photo de cuisine végane 1" />
+                                        <div class="one">
+                                            <p><b>Green Delights –</b>Cuisine végane créative et gourmande, avec des
+                                                ingrédients
+                                                frais
+                                                et
+                                                locaux
+                                                pour un
+                                                plaisir 100% naturel.</p>
+                                        </div>
+
+                                        <div class="two">
+                                            <img class="two-vegy"
+                                                src="/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg"
+                                                alt="photo de cuisine végane 2" />
+                                            <div class="one">
+                                                <p><b>Végét'Horizon –</b>Une expérience culinaire végane savoureuse,
+                                                    alliant
+                                                    fraîcheur,
+                                                    éthique
+                                                    et
+                                                    créativité.</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div> -->
     </section>
 
 

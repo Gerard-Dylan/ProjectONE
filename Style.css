@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --primary-color: #F5F1E3;
 
 }
 
@@ -15,7 +16,7 @@ body {
 }
 
 /* navigation latéral */
-
+/* 
 .cssNavigationLateral {
     height: 100%;
     width: 250px;
@@ -100,53 +101,204 @@ body {
     border: none;
     cursor: pointer;
     letter-spacing: 0.05rem;
-}
+} */
 
-
-
-.français {
-    width: 60%;
+/*  box images  */
+#restaurant-french {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: rgba(100, 100, 100, 0.2) 0px 7px 29px 0px;
-    padding: 20px;
+    justify-content: center;
 
 }
 
+/* Conteneur images + text du bloc francais */
+.francais {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    background-color: var(--primary-color);
+}
+
+/* les images */
 img {
     width: 100%;
+
 }
 
-.detail-box {
+
+/* titre + buttun du restaurant français 1  */
+.detail-box-french1 {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 1%;
+
 }
 
 h2 {
-    /* en attente */
+    text-align: center;
+
+    .road-rage-regular {
+        font-family: "Road Rage", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    font-size: 1.5rem;
+
 }
 
+/* bloc buttn du resto français */
 #btn-french-one {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: solid black;
-    display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    font-size: 40px;
-    cursor: pointer;
+    font-size: 1em;
+    margin: 1% 0 0 43%;
+
+
 }
 
+
+/* survol du bloc buttun du resto français */
 #btn-french-one:hover {
     background-color: green;
 }
 
-#details-one {
+/* Bloc du descritptif du resto français 1*/
+#details-text-french-one {
     height: 0;
     overflow: hidden;
+}
+
+/* Conteneur images + text du bloc francais */
+.français2 {
+    display: none;
+}
+
+
+
+/*  box images  */
+#restaurant-japan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Conteneur images + text du bloc francais */
+.japan {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    background-color: var(--primary-color);
+}
+
+
+
+/* titre + buttun du restaurant français 1  */
+.detail-box-japan {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+
+}
+
+
+
+/* bloc buttn du resto français */
+#btn-japan {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid black;
+    font-size: 1em;
+    margin: 1% 0 0 43%;
+
+
+}
+
+
+/* survol du bloc buttun du resto français */
+#btn-japan:hover {
+    background-color: green;
+}
+
+/* Bloc du descritptif du resto français 1*/
+#details-text-japan {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.japan-two {
+    display: none;
+}
+
+
+/*  box images  */
+#restaurant-usa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Conteneur images + text du bloc francais */
+.usa {
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    background-color: var(--primary-color);
+}
+
+
+/* titre + buttun du restaurant français 1  */
+.detail-box-usa {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+
+}
+
+
+/* bloc buttn du resto français */
+#btn-usa {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid black;
+    font-size: 1em;
+    margin: 1% 0 0 43%;
+
+
+}
+
+
+/* survol du bloc buttun du resto français */
+#btn-usa:hover {
+    background-color: green;
+}
+
+/* Bloc du descritptif du resto français 1*/
+#details-text-usa {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.usa-two {
+    display: none;
 }

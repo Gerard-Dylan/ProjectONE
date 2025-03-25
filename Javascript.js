@@ -1,4 +1,4 @@
-const dropdown = document.querySelector(".dropdown");
+/* const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 
 button.addEventListener("click", function (event) {
@@ -29,7 +29,7 @@ function applyFilter() {
     dropdown.classList.remove("show");
 
 }
-
+ */
 /* /* On isole notre html *const navigationLateral = document.getElementById("jsNavigationLateral");
 const ouvertureDuMenu = document.getElementById("jsOuvertureDuMenu");
 const fermetureLateral = document.getElementById("jsFermetureLateral");
@@ -49,19 +49,83 @@ fermetureLateral.onclick = fermeMenu;
  */
 
 
+/* Récupération de l'élément Buttun */
 let btnFrenchOne = document.getElementById("btn-french-one");
-let btnIconFrenchOne = document.getElementById("icon-french-one");
-let detailsOne = document.getElementById("details-one");
+/* Réupération de l'icône */
+let iconFrenchOne = document.getElementById("icon-french-one");
+/* récupération du détail des textes */
+let detailsTextFrenchOne = document.getElementById("details-text-french-one");
 
-
-const toggleDetails = () => {
-    if (btnFrenchOne.name === "chevron-down") {
-        btnIconFrenchOne.name = "chevron-up";
-        detailsOne.style.height = "max - content";
-    }
-    else {
-        btnIconFrenchOne.name = "chevron-down";
-        detailsOne.style.height = 0;
+/* Condition d'affichage du texte */
+const toggleDetailsFrench = () => {
+    if (iconFrenchOne.name === "chevron-down") {
+        iconFrenchOne.name = "chevron-up";
+        detailsTextFrenchOne.style.height = "max-content";
+    } else {
+        iconFrenchOne.name = "chevron-down";
+        detailsTextFrenchOne.style.height = 0;
     }
 };
-btnFrenchOne.addEventListener("click", toggleDetails);
+
+/* Evenvement clic */
+btnFrenchOne; addEventListener("click", toggleDetailsFrench);
+
+
+
+/* Récupération de l'élément Buttun */
+let btnJapon = document.getElementById("btn-japan");
+/* Réupération de l'icône */
+let iconJapon = document.getElementById("icon-japan");
+/* récupération du détail des textes */
+let detailsTextJapon = document.getElementById("details-text-japan");
+
+/* Condition d'affichage du texte */
+const toggleDetailsJapan = () => {
+    if (iconJapon.name === "chevron-down") {
+        iconJapon.name = "chevron-up";
+        detailsTextJapon.style.height = "max-content";
+    } else {
+        iconJapon.name = "chevron-down";
+        detailsTextJapon.style.height = 0;
+    }
+};
+/* Evenvement clic */
+btnJapon; addEventListener("click", toggleDetailsJapan);
+
+
+
+
+/* Récupération de l'élément Buttun */
+let btnusa = document.getElementById("btn-usa");
+/* Réupération de l'icône */
+let iconUsa = document.getElementById("icon-Usa");
+/* récupération du détail des textes */
+let detailsTextUsa = document.getElementById("details-text-usa");
+
+/* Condition d'affichage du texte */
+const toggleDetailsUsa = () => {
+    if (iconUsa.name === "chevron-down") {
+        iconUsa.name = "chevron-up";
+        detailsTextUsa.style.height = "max-content";
+    } else {
+        iconUsa.name = "chevron-down";
+        detailsTextUsa.style.height = 0;
+    }
+};
+/* Evenvement clic */
+btnUsa; addEventListener("click", toggleDetailsUsa);
+
+console.log(detailsTextUsa)
+
+
+const popover = document.getElementById("mypopover");
+
+//…
+
+popover.addEventListener("toggle", (event) => {
+    if (event.newState === "open") {
+        console.log("Le popover a été affiché");
+    } else {
+        console.log("Le popover a été masqué");
+    }
+});

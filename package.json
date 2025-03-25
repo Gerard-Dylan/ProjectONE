@@ -1,0 +1,20 @@
+{
+  "name": "projectone",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "1er Projet avec la Team KLAD SQUAD",
+  "main": "Javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerard-Dylan/ProjectONE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerard-Dylan/ProjectONE/issues"
+  },
+  "homepage": "https://github.com/Gerard-Dylan/ProjectONE#readme"
+}

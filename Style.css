@@ -68,7 +68,7 @@ header {
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
+    background-color: #f5f1e3;
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -90,7 +90,7 @@ header {
 }
 
 .sidenav a:hover {
-    color: #111;
+    color: black;
 }
 
 
@@ -122,22 +122,19 @@ header {
 
 }
 
+.dropdown {
+    font-family: ArsenalSC;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
 
 button {
     border-radius: 30px;
     background-color: var(--secondary-color);
     font-family: ArsenalSC;
     font-size: 15px;
-    padding-left: 63px;
-    padding-right: 63px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
-
-.dropdown {
-	position: relative;
-	display: inline-block;
 }
 
 .dropdown-content {

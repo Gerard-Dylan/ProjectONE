@@ -1,3 +1,5 @@
+
+/* menu burger */
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -14,11 +16,6 @@ function openNav() {
 function closeNav() {
     sidenav.classList.remove("active");
 }
-
-
-
-
-// ------------Affiche le menu déroulant-------------
 
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");

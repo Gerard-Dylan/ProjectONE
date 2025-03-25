@@ -225,4 +225,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	renderRestaurants(restaurants);
 });
 
+
 // ------------------------

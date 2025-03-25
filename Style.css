@@ -122,6 +122,18 @@ header {
 
 }
 
+
+button {
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    font-family: ArsenalSC;
+    font-size: 15px;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
 .dropdown {
     font-family: ArsenalSC;
     position: relative;
@@ -130,12 +142,6 @@ header {
     padding-top: 15px;
 }
 
-button {
-    border-radius: 30px;
-    background-color: var(--secondary-color);
-    font-family: ArsenalSC;
-    font-size: 15px;
-}
 
 .dropdown-content {
 	display: none;

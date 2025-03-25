@@ -18,6 +18,17 @@
     src: url(./Fonts/RoadRage.ttf);
 }
 
+.logo {
+    width: 15%;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15em
+}
+
 .nav_image {
     background-image: url("./images/foie-gras-1024x683.png");
     background-size: cover;

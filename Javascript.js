@@ -44,7 +44,7 @@ const restaurants = [
 		src: "/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg",
 		alt: "Photo du plat du bistro",
 		description:
-			"<b>Le Petit Bistro –</b> Un cadre intime pour savourer des plats traditionnels comme le bœuf bourguignon et la tarte tatin.",
+			"Un cadre intime pour savourer des plats traditionnels comme le bœuf bourguignon et la tarte tatin.",
 	},
 	{
 		name: "Brasserie Saint-Germain",
@@ -54,7 +54,7 @@ const restaurants = [
 		src: "/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg",
 		alt: "Photo du plat de la Brasserie",
 		description:
-			"<b>Brasserie Saint-Germain –</b> Une cuisine raffinée avec des produits du terroir et des vins soigneusement sélectionnés.",
+			"Une cuisine raffinée avec des produits du terroir et des vins soigneusement sélectionnés.",
 	},
 	{
 		name: "Sakura Sushi",
@@ -64,7 +64,7 @@ const restaurants = [
 		src: "/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg",
 		alt: "Photo du plat du Sakura Sushi",
 		description:
-			"<b>Sakura Sushi –</b> Un bar à sushi où poissons frais et présentation élégante se rencontrent pour une expérience gastronomique unique.",
+			"Un bar à sushi où poissons frais et présentation élégante se rencontrent pour une expérience gastronomique unique.",
 	},
 	{
 		name: "Ramen Ichiban",
@@ -74,7 +74,7 @@ const restaurants = [
 		src: "/images/asian-rolls-with-herbs-spices.jpg",
 		alt: "Photo de plat du Ramen Ichiban",
 		description:
-			"<b>Ramen Ichiban –</b> Savourez de délicieux bols de ramen aux bouillons parfumés et aux nouilles faites maison.",
+			"Savourez de délicieux bols de ramen aux bouillons parfumés et aux nouilles faites maison.",
 	},
 	{
 		name: "Burger Haven",
@@ -84,7 +84,7 @@ const restaurants = [
 		src: "/images/flat-lay-american-food-with-america-flag.jpg",
 		alt: "Photo de plat du Burger Haven",
 		description:
-			"<b>Burger Haven –</b> Savourez des burgers juteux, des frites croustillantes et des milkshakes onctueux dans une ambiance rétro typiquement américaine.",
+			"Savourez des burgers juteux, des frites croustillantes et des milkshakes onctueux dans une ambiance rétro typiquement américaine.",
 	},
 	{
 		name: "Smokey BBQ House",
@@ -94,7 +94,7 @@ const restaurants = [
 		src: "/images/meat-slices-sauce-with-mashed-potato.jpg",
 		alt: "Photo de plat du Smokey BBQ",
 		description:
-			"<b>Smokey BBQ House –</b> Dégustez des viandes fumées lentement, nappées de sauce barbecue maison, dans un cadre chaleureux et convivial.",
+			"Dégustez des viandes fumées lentement, nappées de sauce barbecue maison, dans un cadre chaleureux et convivial.",
 	},
 	{
 		name: "El Rancho Grill",
@@ -104,7 +104,7 @@ const restaurants = [
 		src: "/images/mexican-food-blue-background.jpg",
 		alt: "Photo de plat du El Rancho Grill",
 		description:
-			"<b>El Rancho Grill –</b> Un mélange explosif de saveurs avec des tacos épicés, des fajitas grillées et des margaritas rafraîchissantes.",
+			"Un mélange explosif de saveurs avec des tacos épicés, des fajitas grillées et des margaritas rafraîchissantes.",
 	},
 	{
 		name: "MexiFusion",
@@ -114,7 +114,7 @@ const restaurants = [
 		src: "/images/mexican-menu.jpg",
 		alt: "Photo de plat du Mexifusion",
 		description:
-			"<b>MexiFusion –</b> Découvrez une cuisine tex-mex revisitée avec des ingrédients frais et une touche moderne.",
+			"Découvrez une cuisine tex-mex revisitée avec des ingrédients frais et une touche moderne.",
 	},
 	{
 		name: "Lahore Palace",
@@ -124,7 +124,7 @@ const restaurants = [
 		src: "/images/duc-van-pWYRJOSPMcY-unsplash.jpg",
 		alt: "Photo de plat du Lahore Palace",
 		description:
-			"<b>Lahore Palace –</b> Un voyage culinaire avec des currys épicés, des grillades tandoori et des pains naan moelleux.",
+			"Un voyage culinaire avec des currys épicés, des grillades tandoori et des pains naan moelleux.",
 	},
 	{
 		name: "Karachi Delight",
@@ -134,7 +134,7 @@ const restaurants = [
 		src: "/images/magic-mary-nEOzmjguwO0-unsplash.jpg",
 		alt: "Photo de plat du Karachi Delight",
 		description:
-			"<b>Karachi Delight –</b> Une explosion de saveurs authentiques avec des plats mijotés et des épices traditionnelles du Pakistan.",
+			"Une explosion de saveurs authentiques avec des plats mijotés et des épices traditionnelles du Pakistan.",
 	},
 	{
 		name: "Trattoria Bella",
@@ -144,7 +144,7 @@ const restaurants = [
 		src: "/images/tomatoes-raw-pasta-near-italian-food.jpg",
 		alt: "Photo de plat du Trattoria Bella",
 		description:
-			"<b>Trattoria Bella –</b> Plongez dans l'Italie avec des pâtes fraîches, des pizzas au feu de bois et des tiramisus maison.",
+			"Plongez dans l'Italie avec des pâtes fraîches, des pizzas au feu de bois et des tiramisus maison.",
 	},
 	{
 		name: "Osteria Napoli",
@@ -154,7 +154,7 @@ const restaurants = [
 		src: "/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
 		alt: "Photo de plat du Osteria Napoli",
 		description:
-			"<b>Osteria Napoli –</b> Un restaurant authentique où les saveurs méditerranéennes se marient à une ambiance familiale et chaleureuse.",
+			"Un restaurant authentique où les saveurs méditerranéennes se marient à une ambiance familiale et chaleureuse.",
 	},
 	{
 		name: "Green Delights",
@@ -164,7 +164,7 @@ const restaurants = [
 		src: "/images/assortment-delicious-food-ingredients.jpg",
 		alt: "Photo de plat du Green Delights",
 		description:
-			"<b>Green Delights –</b> Cuisine végane créative et gourmande, avec des ingrédients frais et locaux pour un plaisir 100% naturel.",
+			"Cuisine végane créative et gourmande, avec des ingrédients frais et locaux pour un plaisir 100% naturel.",
 	},
 	{
 		name: "Végét'Horizon",
@@ -174,7 +174,7 @@ const restaurants = [
 		src: "/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg",
 		alt: "Photo de plat du Végét'Horizon",
 		description:
-			"<b>Végét'Horizon –</b> Une expérience culinaire végane savoureuse, alliant fraîcheur, éthique et créativité.",
+			"Une expérience culinaire végane savoureuse, alliant fraîcheur, éthique et créativité.",
 	},
 ];
 
@@ -200,7 +200,7 @@ function renderRestaurants(restaurantsList) {
 		restaurantDiv.innerHTML = `
             <h2>${restaurant.name}</h2>
             <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
-            <p>${restaurant.description}</p>
+            <p> <b>${restaurant.name}</b> - ${restaurant.description}</p>
             <p class="price">Prix : ${restaurant.price}€</p>
         `;
 

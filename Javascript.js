@@ -17,6 +17,8 @@ function closeNav() {
     sidenav.classList.remove("active");
 }
 
+// ------------Affiche le menu déroulant-------------
+
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 

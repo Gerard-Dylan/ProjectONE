@@ -210,7 +210,12 @@ button {
 
 .type-container h2 {
     text-align: center !important; 
-    margin-bottom: 20px;
+    background-color: rgb(220, 220, 200);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: ArsenalSC;
+    width: 150px;
+    margin: 10px auto;
 }
 
 .restaurant {
@@ -227,7 +232,7 @@ button {
 }
 
 .restaurant h2 {
-    background-color: var(--secondary-color);
+    background-color:var(--secondary-color);
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -251,7 +256,10 @@ button {
 
 .descriptif-content {
     display: none;
-    background-color: var(--secondary-color)}
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+    
 
 
 

@@ -26,6 +26,11 @@
     height: 150px;
 }
 
+.image1 {
+    height: 350px;
+    width: 300px;
+}
+
 header {
 
     background-color: var(--primary-color);
@@ -158,6 +163,138 @@ button {
     cursor: pointer;
     letter-spacing: 0.05rem;
 }
+
+footer {
+    background-color: var(--secondary-color);
+
+    .container2 {
+        display: flex;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuPc {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    header {
+
+        background-color: var(--primary-color);
+        text-align: center;
+
+        h1 {
+            font-family: ArsenalSC;
+            font-size: 45px;
+            background-color: var(--secondary-color);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 40px;
+            font-family: RoadRage;
+            background-color: var(--primary-color);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .burger_button,
+    .sidenav {
+        display: none;
+    }
+
+    .nav_image {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 25em;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: RoadRage;
+        font-size: 2em;
+        color: black;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .header_image {
+        display: none;
+
+    }
+
+    header {
+
+        background-color: var(--primary-color);
+        text-align: center;
+
+        h1 {
+            font-family: ArsenalSC;
+            font-size: 45px;
+            background-color: var(--primary-color);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+
+        p {
+            font-size: 40px;
+            font-family: RoadRage;
+            background-color: var(--primary-color);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    }
+
+
+}
+
+
+#restaurant-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+
+    .image {
+        width: 100%;
+        max-width: 400px;
+        height: auto
+    }
+}
+
 
 footer {
     background-color: var(--secondary-color);

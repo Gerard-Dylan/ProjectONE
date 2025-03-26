@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
+
+
 <nav>
     <!-- Menu classique  pour tablette et PC -->
     <div class="nav_image">
@@ -58,6 +60,7 @@
         <img src="./images/image_header.jpeg" alt="Foie gras" height="350px" width="300px">
     </div>
 
+
     <div class="dropdown">
         <button>Je choisis ma bonne adresse !</button>
 
@@ -66,59 +69,31 @@
                 <label>
                     <input type="checkbox" id="vegan"> Vegan
                 </label>
-                =======
-                <div class="dropdown-content">
-                    <div class="card-content">
-                        <label>
-                            <input type="checkbox" id="vegan"> Vegan
-                        </label>
-                    </div>
-                    <div class="card-content">
-                        <label for="foodType">Type de nourriture</label>
-                        <select id="foodType">
-                            <option value="">Sélectionner</option>
-                            <option value="français">Français</option>
-                            <option value="japonais">Japonais</option>
-                            <option value="americain">Americain</option>
-                            <option value="mexicain">Mexicain</option>
-                            <option value="pakistanais">Pakistanais</option>
-                            <option value="italien">Italien</option>
-                            <option value="vegan">Vegan</option>
-                        </select>
-                    </div>
-                    <div class="card-content">
-                        <label for="sortOrder">Trier par</label>
-                        <select id="sortOrder">
-                            <option value="">Sélectionner</option>
-                            <option value="price_asc">Prix croissant</option>
-                            <option value="price_desc">Prix décroissant</option>
-                        </select>
-                    </div>
-                    <button class="btn" onclick="applyFilter()">Appliquer</button>
-                    >>>>>>> d116c0c019b1a95f8bb6b40f315bfd8cc6de0200
-                </div>
-                <div class="card-content">
-                    <label for="foodType">Type de nourriture</label>
-                    <select id="foodType">
-                        <option value="">Sélectionner</option>
-                        <option value="français">Français</option>
-                        <option value="japonais">Japonais</option>
-                        <option value="americain">Americain</option>
-                        <option value="indien">Indien</option>
-                        <option value="amazonie">Amazonien</option>
-                    </select>
-                </div>
-                <div class="card-content">
-                    <label for="sortOrder">Trier par</label>
-                    <select id="sortOrder">
-                        <option value="">Sélectionner</option>
-                        <option value="price_asc">Prix croissant</option>
-                        <option value="price_desc">Prix décroissant</option>
-                    </select>
-                </div>
-                <button class="btn" onclick="applyFilter()">Appliquer</button>
             </div>
+            <div class="card-content">
+                <label for="foodType">Type de nourriture</label>
+                <select id="foodType">
+                    <option value="">Sélectionner</option>
+                    <option value="français">Français</option>
+                    <option value="japonais">Japonais</option>
+                    <option value="americain">Americain</option>
+                    <option value="mexicain">Mexicain</option>
+                    <option value="pakistanais">Pakistanais</option>
+                    <option value="italien">Italien</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+            <div class="card-content">
+                <label for="sortOrder">Trier par</label>
+                <select id="sortOrder">
+                    <option value="">Sélectionner</option>
+                    <option value="price_asc">Prix croissant</option>
+                    <option value="price_desc">Prix décroissant</option>
+                </select>
+            </div>
+            <button class="btn" onclick="applyFilter()">Appliquer</button>
         </div>
+    </div>
 
 
 
@@ -128,6 +103,8 @@
 </header>
 
 <body>
+    
+    <div id="restaurant-container"></div>
 
 
     <script src="Javascript.js"></script>

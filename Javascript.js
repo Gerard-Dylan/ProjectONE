@@ -22,7 +22,7 @@ function closeNav() {
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 
-button.addEventListener("click", (event) => {
+button.addEventListener("click", () => {
 	dropdown.classList.toggle("show");
 });
 
@@ -189,23 +189,76 @@ const restaurantContainer = document.getElementById("restaurant-container");
 
 // Fonction pour afficher les restaurants en dynamique.
 function renderRestaurants(restaurantsList) {
-	restaurantContainer.innerHTML = ""; 
+    restaurantContainer.innerHTML = "";
 
-	restaurantsList.forEach((restaurant) => {
-		const restaurantDiv = document.createElement("div");
-		restaurantDiv.classList.add("restaurant", restaurant.type); 
-		restaurantDiv.id = restaurant.id;
+    // Regrouper les restaurants par type de cuisine.
+    const restaurantsByType = restaurantsList.reduce((acc, restaurant) => {
+        if (!acc[restaurant.type]) {
+            acc[restaurant.type] = [];
+        }
+        acc[restaurant.type].push(restaurant);
+        return acc;
+    }, {});
 
-		// Je génére le contenu de mes restaurants.
-		restaurantDiv.innerHTML = `
-            <h2>${restaurant.type}</h2>
-            <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
-            <p> <b>${restaurant.name}</b> - ${restaurant.description}</p>
-            <p class="price">Prix : ${restaurant.price}€</p>
-        `;
+    // Créer un conteneur pour chaque type de cuisine.
+    for (const type in restaurantsByType) {
+        const typeContainer = document.createElement("div");
+        typeContainer.classList.add("type-container");
 
-		restaurantContainer.appendChild(restaurantDiv);
-	});
+        // Créer un titre pour le type de cuisine.
+        const typeTitle = document.createElement("h2");
+        typeTitle.textContent = type;
+        typeContainer.appendChild(typeTitle);
+
+        // Créer des paires de restaurants.
+        const restaurantPairs = [];
+        for (let i = 0; i < restaurantsByType[type].length; i += 2) {
+            restaurantPairs.push(restaurantsByType[type].slice(i, i + 2));
+        }
+
+        // Créer un conteneur pour chaque paire de restaurants.
+        restaurantPairs.forEach((pair) => {
+            const pairContainer = document.createElement("div");
+            pairContainer.classList.add("pair-container");
+
+            // Ajouter chaque restaurant de la paire au conteneur.
+            pair.forEach((restaurant) => {
+                const restaurantDiv = document.createElement("div");
+                restaurantDiv.classList.add("restaurant", restaurant.type);
+                restaurantDiv.id = restaurant.id;
+
+                restaurantDiv.innerHTML = `
+                    <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
+                    <button class="descriptif-btn">Descriptif</button>
+                    <div class="descriptif-content">
+                        <p><b>${restaurant.name}</b> - ${restaurant.description}</p>
+                        <p class="price">Prix : ${restaurant.price}€</p>
+                    </div>
+                `;
+                pairContainer.appendChild(restaurantDiv);
+
+                // Ajout de l'écouteur d'événement pour le bouton "Descriptif".
+                const descriptifBtn = restaurantDiv.querySelector(".descriptif-btn");
+                const descriptifContent = restaurantDiv.querySelector(".descriptif-content");
+
+                descriptifBtn.addEventListener("click", () => {
+                    descriptifContent.classList.toggle("show");
+                });
+            });
+            typeContainer.appendChild(pairContainer);
+        });
+        restaurantContainer.appendChild(typeContainer);
+    }
+
+    // Gestion de la fermeture du menu déroulant au clique en dehors.
+    document.addEventListener("click", (event) => {
+        const descriptifContents = document.querySelectorAll(".descriptif-content");
+        descriptifContents.forEach((content) => {
+            if (!content.parentElement.contains(event.target)) {
+                content.classList.remove("show");
+            }
+        });
+    });
 }
 
 // ---------------------------
@@ -214,16 +267,23 @@ function renderRestaurants(restaurantsList) {
 // Fonction pour filtré et trié les prix.
 function applyFilter() {
 	const isVegan = document.getElementById("vegan").checked;
-	const foodType = document.getElementById("foodType").value;
+	const foodType = document.getElementById("foodType").value.toLowerCase();
 	const sortOrder = document.getElementById("sortOrder").value;
 
 	console.log("Filtre sélectionné:", { isVegan, foodType, sortOrder });
 
 	// Filtre suivant la séléction.
 	let filteredRestaurants = restaurants.filter((restaurant) => {
-		if (isVegan) return restaurant.type === "vegan";
-		return foodType === "" || restaurant.type === foodType;
-	});
+        const restaurantType = restaurant.type.toLowerCase();
+
+        // Si je coche vegan je ne garde QUE les restaurants Vegan.
+        if (isVegan) return restaurantType === "vegan";
+
+        // Sinon, je filtre par type de nourriture sélectionné.
+        if (foodType && restaurantType !== foodType) return false;
+
+        return true;
+    });
 
 	// Tri selon les prix.
 	if (sortOrder === "price_asc") {
@@ -235,6 +295,13 @@ function applyFilter() {
 	// Pour mettre à jour l'affichage avec les restaurants filtrés et triés.
 	renderRestaurants(filteredRestaurants);
 	dropdown.classList.remove("show");
+
+
+	// Je remet mes filtres à zéro après l'application.
+    document.getElementById("vegan").checked = false;
+    document.getElementById("foodType").value = "";
+    document.getElementById("sortOrder").value = "";
+
 }
 
 // ---------------------------

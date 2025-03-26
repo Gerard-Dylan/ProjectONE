@@ -8,44 +8,27 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
-
-
 <nav>
-    <!-- Menu classique  pour tablette et PC -->
+
     <div class="nav_image">
-        <ul class="menuPc">
-            <li><a href="">À propos</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Accueil</a></li>
-        </ul>
-        <div class="container">
-            <img src="images/restaurant_location_icon_146860-removebg-preview.png" alt=logo-du-site class="logo">
-            <div id="buttontablet"></div>
-
-
-            <div id="mySidenav" class="sidenav">
-
-                <a id="closeBtn" href="#" class="close">&times;</a>
-                <!-- liste du menu burger -->
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">A propos</a></li>
-                </ul>
-            </div>
-            <div>
-                <!-- Ceci est le bouton d'ouverture du menu burger -->
-                <a href="#" id="openBtn" class="burger_button">
-                    <span class="burger-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">A propos</a></li>
+            </ul>
         </div>
-
-
+        <div>
+            <a href="#" id="openBtn" class="burger_button">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+    </div>
 
 </nav>
 
@@ -62,7 +45,6 @@
         <img src="./images/image_header.jpeg" alt="Foie gras" height="350px" width="300px">
     </div>
 
-
     <div class="dropdown">
         <button class="button_1">Je choisis ma bonne adresse !</button>
 
@@ -71,6 +53,7 @@
                 <label>
                     <input type="checkbox" id="vegan"> Vegan
                 </label>
+                =======
                 <div class="dropdown-content">
                     <div class="card-content">
                         <label>
@@ -122,16 +105,13 @@
                 <button class="btn" onclick="applyFilter()">Appliquer</button>
             </div>
         </div>
-
+    </div>
 
 
 
 </header>
 
 <body>
-
-    <div id="restaurant-container"></div>
-
 
     <script src="Javascript.js"></script>
 

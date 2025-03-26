@@ -19,6 +19,8 @@ function closeNav() {
 
 // ------------Affiche le menu déroulant-------------
 
+// ------------Affiche le menu déroulant-------------
+
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 

@@ -38,7 +38,7 @@ document.addEventListener("click", (event) => {
 const restaurants = [
 	{
 		name: "Le Petit Bistro",
-		type: "français",
+		type: "Français",
 		price: 25,
 		id: "LePetitBistro",
 		src: "/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg",
@@ -48,7 +48,7 @@ const restaurants = [
 	},
 	{
 		name: "Brasserie Saint-Germain",
-		type: "français",
+		type: "Français",
 		price: 30,
 		id: "BrasserieSaint-Germain",
 		src: "/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg",
@@ -58,7 +58,7 @@ const restaurants = [
 	},
 	{
 		name: "Sakura Sushi",
-		type: "japonais",
+		type: "Japonais",
 		price: 20,
 		id: "SakuraSushi",
 		src: "/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg",
@@ -68,7 +68,7 @@ const restaurants = [
 	},
 	{
 		name: "Ramen Ichiban",
-		type: "japonais",
+		type: "Japonais",
 		price: 18,
 		id: "RamenIchiban",
 		src: "/images/asian-rolls-with-herbs-spices.jpg",
@@ -78,7 +78,7 @@ const restaurants = [
 	},
 	{
 		name: "Burger Haven",
-		type: "americain",
+		type: "Americain",
 		price: 15,
 		id: "BurgerHaven",
 		src: "/images/flat-lay-american-food-with-america-flag.jpg",
@@ -88,7 +88,7 @@ const restaurants = [
 	},
 	{
 		name: "Smokey BBQ House",
-		type: "americain",
+		type: "Americain",
 		price: 22,
 		id: "SmokeyBBQHouse",
 		src: "/images/meat-slices-sauce-with-mashed-potato.jpg",
@@ -98,7 +98,7 @@ const restaurants = [
 	},
 	{
 		name: "El Rancho Grill",
-		type: "mexicain",
+		type: "Mexicain",
 		price: 17,
 		id: "ElRanchoGrill",
 		src: "/images/mexican-food-blue-background.jpg",
@@ -108,7 +108,7 @@ const restaurants = [
 	},
 	{
 		name: "MexiFusion",
-		type: "mexicain",
+		type: "Mexicain",
 		price: 19,
 		id: "Mexi-Fusion",
 		src: "/images/mexican-menu.jpg",
@@ -118,7 +118,7 @@ const restaurants = [
 	},
 	{
 		name: "Lahore Palace",
-		type: "pakistanais",
+		type: "Pakistanais",
 		price: 23,
 		id: "LahorePalace",
 		src: "/images/duc-van-pWYRJOSPMcY-unsplash.jpg",
@@ -128,7 +128,7 @@ const restaurants = [
 	},
 	{
 		name: "Karachi Delight",
-		type: "pakistanais",
+		type: "Pakistanais",
 		price: 21,
 		id: "KarachiDelight",
 		src: "/images/magic-mary-nEOzmjguwO0-unsplash.jpg",
@@ -138,7 +138,7 @@ const restaurants = [
 	},
 	{
 		name: "Trattoria Bella",
-		type: "italien",
+		type: "Italien",
 		price: 26,
 		id: "TrattoriaBella",
 		src: "/images/tomatoes-raw-pasta-near-italian-food.jpg",
@@ -148,7 +148,7 @@ const restaurants = [
 	},
 	{
 		name: "Osteria Napoli",
-		type: "italien",
+		type: "Italien",
 		price: 28,
 		id: "OsteriaNapoli",
 		src: "/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
@@ -158,7 +158,7 @@ const restaurants = [
 	},
 	{
 		name: "Green Delights",
-		type: "vegan",
+		type: "Vegan",
 		price: 20,
 		id: "GreenDelights",
 		src: "/images/assortment-delicious-food-ingredients.jpg",
@@ -168,7 +168,7 @@ const restaurants = [
 	},
 	{
 		name: "Végét'Horizon",
-		type: "vegan",
+		type: "Vegan",
 		price: 22,
 		id: "Végét'-Horizon",
 		src: "/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg",
@@ -198,7 +198,7 @@ function renderRestaurants(restaurantsList) {
 
 		// Je génére le contenu de mes restaurants.
 		restaurantDiv.innerHTML = `
-            <h2>${restaurant.name}</h2>
+            <h2>${restaurant.type}</h2>
             <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
             <p> <b>${restaurant.name}</b> - ${restaurant.description}</p>
             <p class="price">Prix : ${restaurant.price}€</p>

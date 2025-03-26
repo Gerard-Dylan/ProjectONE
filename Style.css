@@ -34,6 +34,10 @@
     height: 150px;
 }
 
+.image1 {
+    height: 350px;
+    width: 300px;
+}
 
 header {
 
@@ -223,6 +227,7 @@ footer {
             padding-bottom: 10px;
         }
 
+
     }
 
 }
@@ -261,6 +266,7 @@ footer {
 
     .header_image {
         display: none;
+
     }
 
     header {
@@ -275,6 +281,8 @@ footer {
             padding-top: 20px;
             padding-bottom: 20px;
         }
+
+
 
         p {
             font-size: 40px;

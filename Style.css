@@ -18,17 +18,6 @@
     src: url(./Fonts/RoadRage.ttf);
 }
 
-.logo {
-    width: 15%;
-
-}
-
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 15em
-}
-
 .nav_image {
     background-image: url("./images/foie-gras-1024x683.png");
     background-size: cover;
@@ -54,8 +43,7 @@ header {
         font-size: 40px;
         font-family: RoadRage;
         background-color: var(--primary-color);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 20px;
     }
 
 }
@@ -68,7 +56,7 @@ header {
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #f5f1e3;
+    background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -90,7 +78,7 @@ header {
 }
 
 .sidenav a:hover {
-    color: black;
+    color: #111;
 }
 
 

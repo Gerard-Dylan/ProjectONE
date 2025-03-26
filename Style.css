@@ -200,7 +200,6 @@ footer {
     .container {
         display: flex;
         flex-direction: row-reverse;
-        gap: 15em
     }
 
     header {

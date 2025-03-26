@@ -5,7 +5,11 @@
 
 * {
     box-sizing: border-box;
+<<<<<<< HEAD
     margin: auto;
+=======
+    margin: 0; 
+>>>>>>> origin/dylan
 }
 
 @font-face {
@@ -21,13 +25,20 @@
 .logo {
     width: 100px;
     height: 100px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dylan
 }
 
 .container {
     display: flex;
     flex-direction: row-reverse;
+<<<<<<< HEAD
     gap: 15em
+=======
+    gap: 15em;
+>>>>>>> origin/dylan
 }
 
 .nav_image {
@@ -38,6 +49,7 @@
     height: 150px;
 }
 
+<<<<<<< HEAD
 
 header {
 
@@ -62,6 +74,33 @@ header {
 
 }
 
+=======
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.image1 {
+    height: 350px;
+    width: 300px;
+}
+
+header h1 {
+    font-family: ArsenalSC;
+    font-size: 45px;
+    background-color: var(--secondary-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    font-size: 40px;
+    font-family: RoadRage;
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+>>>>>>> origin/dylan
 
 .sidenav {
     height: 100%;
@@ -81,7 +120,10 @@ header {
     margin: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dylan
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -95,12 +137,18 @@ header {
     color: black;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dylan
 .sidenav.active {
     left: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/dylan
 .sidenav .close {
     position: absolute;
     top: 0;
@@ -111,8 +159,16 @@ header {
 .burger_button {
     display: block;
     width: 30px;
+<<<<<<< HEAD
     margin-left: 35px;
     padding-top: 30px;
+=======
+    margin-left: 10px;
+    padding-top: 30px;
+    position: absolute;
+    left : 10px; 
+    top: 10px;
+>>>>>>> origin/dylan
 }
 
 .burger-icon span {
@@ -121,10 +177,15 @@ header {
     height: 5px;
     background-color: black;
     margin: 6px 0;
+<<<<<<< HEAD
 
 }
 
 
+=======
+}
+
+>>>>>>> origin/dylan
 button {
     border-radius: 30px;
     background-color: var(--secondary-color);
@@ -175,17 +236,68 @@ button {
     letter-spacing: 0.05rem;
 }
 
+<<<<<<< HEAD
+=======
+/* mediaquery resto affichage */
+
+@media (min-width: 768px) {
+    #restaurant-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant {
+        width: 50%;
+    }
+
+    .pair-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .restaurant img {
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .descriptif-btn {
+        margin: 10px auto 20px;
+    }
+}
+
+/* ------------------------ */
+>>>>>>> origin/dylan
 
 #restaurant-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+<<<<<<< HEAD
 
+=======
+}
+
+#restaurant-container .type-container {
+    width: 100% !important; 
+}
+
+.type-container h2 {
+    text-align: center !important; 
+    background-color: rgb(220, 220, 200);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: ArsenalSC;
+    width: 150px;
+    margin: 10px auto;
+>>>>>>> origin/dylan
 }
 
 .restaurant {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
 
     .image {
         width: 100%;
@@ -225,6 +337,56 @@ button {
 
 }
 
+=======
+}
+
+.restaurant .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.restaurant h2 {
+    background-color:var(--secondary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+/* modif btn sous img restaurant */
+
+.descriptif-btn {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px auto 20px;
+}
+
+.descriptif-content {
+    display: none;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+    
+
+
+
+.descriptif-content.show {
+    display: block;
+}
+
+/* ---------------- */
+
+>>>>>>> origin/dylan
 
 footer {
     background-color: var(--secondary-color);
@@ -235,6 +397,7 @@ footer {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+<<<<<<< HEAD
 
 
     styled {
@@ -266,4 +429,6 @@ footer {
             inset 2px 2px 3px rgba(0, 0, 0, 0.6);
     }
 
+=======
+>>>>>>> origin/dylan
 }

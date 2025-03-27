@@ -5,11 +5,7 @@
 
 * {
     box-sizing: border-box;
-<<<<<<< HEAD
-    margin: auto;
-=======
     margin: 0; 
->>>>>>> origin/dylan
 }
 
 @font-face {
@@ -25,20 +21,12 @@
 .logo {
     width: 100px;
     height: 100px;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dylan
 }
 
 .container {
     display: flex;
     flex-direction: row-reverse;
-<<<<<<< HEAD
-    gap: 15em
-=======
     gap: 15em;
->>>>>>> origin/dylan
 }
 
 .nav_image {
@@ -49,32 +37,6 @@
     height: 150px;
 }
 
-<<<<<<< HEAD
-
-header {
-
-    background-color: var(--primary-color);
-    text-align: center;
-
-    h1 {
-        font-family: ArsenalSC;
-        font-size: 45px;
-        background-color: var(--secondary-color);
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    p {
-        font-size: 40px;
-        font-family: RoadRage;
-        background-color: var(--primary-color);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-}
-
-=======
 header {
     background-color: var(--primary-color);
     text-align: center;
@@ -100,7 +62,11 @@ header p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
->>>>>>> origin/dylan
+
+#restaurant-container{
+
+background-color: var(--secondary-color);    
+}
 
 .sidenav {
     height: 100%;
@@ -120,10 +86,6 @@ header p {
     margin: 0;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dylan
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -137,18 +99,10 @@ header p {
     color: black;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dylan
 .sidenav.active {
     left: 0;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/dylan
 .sidenav .close {
     position: absolute;
     top: 0;
@@ -159,16 +113,11 @@ header p {
 .burger_button {
     display: block;
     width: 30px;
-<<<<<<< HEAD
-    margin-left: 35px;
-    padding-top: 30px;
-=======
     margin-left: 10px;
     padding-top: 30px;
     position: absolute;
     left : 10px; 
     top: 10px;
->>>>>>> origin/dylan
 }
 
 .burger-icon span {
@@ -177,15 +126,8 @@ header p {
     height: 5px;
     background-color: black;
     margin: 6px 0;
-<<<<<<< HEAD
-
 }
 
-
-=======
-}
-
->>>>>>> origin/dylan
 button {
     border-radius: 30px;
     background-color: var(--secondary-color);
@@ -195,6 +137,10 @@ button {
     padding-right: 63px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+button:hover{
+background-color: var(--primary-color);
 }
 
 .dropdown {
@@ -217,6 +163,7 @@ button {
     z-index: 1;
 }
 
+
 .dropdown.show .dropdown-content {
     display: block;
 }
@@ -236,14 +183,13 @@ button {
     letter-spacing: 0.05rem;
 }
 
-<<<<<<< HEAD
-=======
 /* mediaquery resto affichage */
 
 @media (min-width: 768px) {
     #restaurant-container {
         display: flex;
         flex-direction: column;
+        background-color: var(--secondary-color);
     }
 
     .restaurant {
@@ -268,15 +214,11 @@ button {
 }
 
 /* ------------------------ */
->>>>>>> origin/dylan
 
 #restaurant-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-<<<<<<< HEAD
-
-=======
 }
 
 #restaurant-container .type-container {
@@ -291,53 +233,11 @@ button {
     font-family: ArsenalSC;
     width: 150px;
     margin: 10px auto;
->>>>>>> origin/dylan
 }
 
 .restaurant {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-
-    .image {
-        width: 100%;
-        max-width: 400px;
-        height: auto
-    }
-
-    /* CSS du bouton détail */
-    styled {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 20px;
-        font-size: 1rem;
-        text-align: center;
-        color: #fff;
-        text-shadow: 1px 1px 1px #000;
-        border-radius: 10px;
-        background-color: var(--secondary-color);
-        background-image: linear-gradient(to top left,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2) 30%,
-                rgba(0, 0, 0, 0));
-        box-shadow:
-            inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-            inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-    }
-
-    .styled:hover {
-        background-color: var(--primary-color);
-    }
-
-    .styled:active {
-        box-shadow:
-            inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-            inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-    }
-
-}
-
-=======
 }
 
 .restaurant .image {
@@ -360,7 +260,7 @@ button {
 /* modif btn sous img restaurant */
 
 .descriptif-btn {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     color: rgb(0, 0, 0);
     padding: 10px 15px;
     border: none;
@@ -373,7 +273,7 @@ button {
 
 .descriptif-content {
     display: none;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     margin-bottom: 20px;
 }
     
@@ -386,7 +286,6 @@ button {
 
 /* ---------------- */
 
->>>>>>> origin/dylan
 
 footer {
     background-color: var(--secondary-color);
@@ -397,38 +296,4 @@ footer {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-<<<<<<< HEAD
-
-
-    styled {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 20px;
-        font-size: 1rem;
-        text-align: center;
-        color: #fff;
-        text-shadow: 1px 1px 1px #000;
-        border-radius: 10px;
-        background-color: rgba(220, 0, 0, 1);
-        background-image: linear-gradient(to top left,
-                rgba(0, 0, 0, 0.2),
-                rgba(0, 0, 0, 0.2) 30%,
-                rgba(0, 0, 0, 0));
-        box-shadow:
-            inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-            inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-    }
-
-    .styled:hover {
-        background-color: rgba(255, 0, 0, 1);
-    }
-
-    .styled:active {
-        box-shadow:
-            inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-            inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-    }
-
-=======
->>>>>>> origin/dylan
 }

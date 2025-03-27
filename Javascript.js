@@ -45,9 +45,9 @@ const header = document.querySelector("header");
 function deplacement() {
 
 	if (window.matchMedia("(min-width:768px)").matches) {
-		btablet.appendChild(bmobile);
+		btablet.appendChild(dropdown);
 	} else {
-		header.appendChild(bmobile)
+		header.appendChild(dropdown)
 
 	}
 

@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
 }
 
 @font-face {
@@ -21,10 +21,13 @@
 .logo {
     width: 100px;
     height: 100px;
-
 }
 
-
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15em;
+}
 
 .nav_image {
     background-image: url("./images/foie-gras-1024x683.png");
@@ -34,34 +37,30 @@
     height: 150px;
 }
 
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
 .image1 {
     height: 350px;
     width: 300px;
 }
 
-header {
-
-    background-color: var(--primary-color);
-    text-align: center;
-
-    h1 {
-        font-family: ArsenalSC;
-        font-size: 45px;
-        background-color: var(--secondary-color);
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    p {
-        font-size: 40px;
-        font-family: RoadRage;
-        background-color: var(--primary-color);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
+header h1 {
+    font-family: ArsenalSC;
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+header p {
+    font-size: 40px;
+    font-family: RoadRage;
+    background-color: var(--primary-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .sidenav {
     height: 100%;
@@ -81,7 +80,6 @@ header {
     margin: 0;
 }
 
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -95,11 +93,9 @@ header {
     color: black;
 }
 
-
 .sidenav.active {
     left: 0;
 }
-
 
 .sidenav .close {
     position: absolute;
@@ -111,8 +107,11 @@ header {
 .burger_button {
     display: block;
     width: 30px;
-    margin-left: 35px;
+    margin-left: 10px;
     padding-top: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
 
 .burger-icon span {
@@ -121,9 +120,7 @@ header {
     height: 5px;
     background-color: black;
     margin: 6px 0;
-
 }
-
 
 button {
     border-radius: 30px;
@@ -142,17 +139,6 @@ button {
     display: inline-block;
     padding-bottom: 15px;
     padding-top: 15px;
-}
-
-button {
-    border-radius: 30px;
-    background-color: var(--secondary-color);
-    font-family: ArsenalSC;
-    font-size: 15px;
-    padding-left: 63px;
-    padding-right: 63px;
-    padding-top: 8px;
-    padding-bottom: 8px;
 }
 
 .dropdown-content {
@@ -196,60 +182,43 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .menuPc {
-        display: none;
-    }
+/* mediaquery resto affichage */
 
-    .container {
+@media (min-width: 768px) {
+    #restaurant-container {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
     }
 
-    header {
-
-        background-color: var(--primary-color);
-        text-align: center;
-
-        h1 {
-            font-family: ArsenalSC;
-            font-size: 45px;
-            background-color: var(--secondary-color);
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        p {
-            font-size: 40px;
-            font-family: RoadRage;
-            background-color: var(--primary-color);
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-
+    .restaurant {
+        width: 50%;
     }
 
-}
+    .pair-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
 
-@media screen and (min-width: 768px) {
+    .restaurant img {
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .descriptif-btn {
+        margin: 10px auto 20px;
+    }
 
     .burger_button,
     .sidenav {
         display: none;
     }
 
-    .nav_image {
+    .menutablet {
         display: flex;
         flex-direction: row-reverse;
-        gap: 25em;
-    }
-
-    .logo {
-        width: 100px;
-        height: 100px;
-
-
+        justify-content: space-between;
     }
 
     a {
@@ -269,63 +238,87 @@ footer {
 
     }
 
-    header {
-
-        background-color: var(--primary-color);
-        text-align: center;
-
-        h1 {
-            font-family: ArsenalSC;
-            font-size: 45px;
-            background-color: var(--primary-color);
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-
-
-        p {
-            font-size: 40px;
-            font-family: RoadRage;
-            background-color: var(--primary-color);
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-    }
-
-
-}
-
-/* @media screen and (min-width:992px) {
-
-    .nav_image {
-        background-image: none;
-        background-color: var(--secondary-color);
+    .logo {
+        bottom: 1000px;
     }
 
     h1 {
         background-color: var(--primary-color);
     }
-} */
+}
+
+/* ------------------------ */
 
 #restaurant-container {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+}
 
+#restaurant-container .type-container {
+    width: 100% !important;
+}
+
+.type-container h2 {
+    text-align: center !important;
+    background-color: rgb(220, 220, 200);
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: ArsenalSC;
+    width: 150px;
+    margin: 10px auto;
 }
 
 .restaurant {
     display: flex;
     flex-direction: column;
-
-    .image {
-        width: 100%;
-        max-width: 400px;
-        height: auto
-    }
 }
+
+.restaurant .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.restaurant h2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+/* modif btn sous img restaurant */
+
+.descriptif-btn {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px auto 20px;
+}
+
+.descriptif-content {
+    display: none;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+
+
+
+.descriptif-content.show {
+    display: block;
+}
+
+/* ---------------- */
 
 
 footer {
@@ -336,5 +329,15 @@ footer {
         text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuPc {
+        display: none;
+    }
+
+    h1 {
+        background-color: var(--secondary-color);
     }
 }

@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0; 
+    margin: auto;
 }
 
 @font-face {
@@ -21,17 +21,10 @@
 .logo {
     width: 100px;
     height: 100px;
+
 }
 
-<<<<<<< HEAD
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 15em;
-}
-=======
 
->>>>>>> origin/kevin
 
 .nav_image {
     background-image: url("./images/foie-gras-1024x683.png");
@@ -41,43 +34,34 @@
     height: 150px;
 }
 
-<<<<<<< HEAD
-=======
 .image1 {
     height: 350px;
     width: 300px;
 }
 
->>>>>>> origin/kevin
 header {
+
     background-color: var(--primary-color);
     text-align: center;
-}
 
-.image1 {
-    height: 350px;
-    width: 300px;
-}
-
-header h1 {
-    font-family: ArsenalSC;
-    font-size: 45px;
-    background-color: var(--secondary-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    h1 {
+        font-family: ArsenalSC;
+        font-size: 45px;
+        background-color: var(--secondary-color);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
     p {
         font-size: 40px;
         font-family: RoadRage;
         background-color: var(--primary-color);
-        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-#restaurant-container{
-
-background-color: var(--secondary-color);    
 }
+
 
 .sidenav {
     height: 100%;
@@ -86,7 +70,7 @@ background-color: var(--secondary-color);
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
+    background-color: #f5f1e3;
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -96,6 +80,7 @@ background-color: var(--secondary-color);
     padding: 0;
     margin: 0;
 }
+
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -107,12 +92,14 @@ background-color: var(--secondary-color);
 }
 
 .sidenav a:hover {
-    color: #111;
+    color: black;
 }
+
 
 .sidenav.active {
     left: 0;
 }
+
 
 .sidenav .close {
     position: absolute;
@@ -124,11 +111,8 @@ background-color: var(--secondary-color);
 .burger_button {
     display: block;
     width: 30px;
-    margin-left: 10px;
+    margin-left: 35px;
     padding-top: 30px;
-    position: absolute;
-    left : 10px; 
-    top: 10px;
 }
 
 .burger-icon span {
@@ -137,7 +121,9 @@ background-color: var(--secondary-color);
     height: 5px;
     background-color: black;
     margin: 6px 0;
+
 }
+
 
 button {
     border-radius: 30px;
@@ -148,10 +134,6 @@ button {
     padding-right: 63px;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-
-button:hover{
-background-color: var(--primary-color);
 }
 
 .dropdown {
@@ -183,7 +165,6 @@ button {
     padding: 10px;
     z-index: 1;
 }
-
 
 .dropdown.show .dropdown-content {
     display: block;
@@ -332,84 +313,19 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-<<<<<<< HEAD
-}
-=======
->>>>>>> origin/kevin
 
-#restaurant-container .type-container {
-    width: 100% !important; 
-}
-
-.type-container h2 {
-    text-align: center !important; 
-    background-color: rgb(220, 220, 200);
-    border-radius: 10px;
-    font-size: 1.5em;
-    font-family: ArsenalSC;
-    width: 150px;
-    margin: 10px auto;
 }
 
 .restaurant {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-}
-
-.restaurant .image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.restaurant h2 {
-    background-color:var(--secondary-color);
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-radius: 25px;
-    margin-top: 40px;
-}
-
-/* modif btn sous img restaurant */
-
-.descriptif-btn {
-    /* background-color: var(--primary-color); */
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 10px auto 20px;
-=======
 
     .image {
         width: 100%;
         max-width: 400px;
         height: auto
     }
->>>>>>> origin/kevin
 }
-
-.descriptif-content {
-    display: none;
-    /* background-color: var(--secondary-color); */
-    margin-bottom: 20px;
-}
-    
-
-
-
-.descriptif-content.show {
-    display: block;
-}
-
-/* ---------------- */
 
 
 footer {

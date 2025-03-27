@@ -1,4 +1,5 @@
 
+/* menu burger */
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -16,14 +17,16 @@ function closeNav() {
 	sidenav.classList.remove("active");
 }
 
+// ------------Affiche le menu déroulant-------------
+
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 
-button.addEventListener("click", function (event) {
+button.addEventListener("click", (event) => {
 	dropdown.classList.toggle("show");
 });
 
-document.addEventListener("click", function (event) {
+document.addEventListener("click", (event) => {
 	if (!dropdown.contains(event.target)) {
 		dropdown.classList.remove("show");
 	}
@@ -31,11 +34,37 @@ document.addEventListener("click", function (event) {
 
 // ---------------------------
 
+
+
+// ----------Deplacement du bouton du header dans la nav -------------------
+
+const bmobile = document.getElementById("buttonmobile");
+const btablet = document.getElementById("buttontablet");
+const header = document.querySelector("header");
+
+function deplacement() {
+
+	if (window.matchMedia("(min-width:768px)").matches) {
+		btablet.appendChild(bmobile);
+	} else {
+		header.appendChild(bmobile)
+
+	}
+
+}
+
+deplacement();
+window.addEventListener("resize", deplacement);
+
+//------------------------------
+
+
+
 // Constantes tableau pour les infos des restaurants.
 const restaurants = [
 	{
 		name: "Le Petit Bistro",
-		type: "Français",
+		type: "français",
 		price: 25,
 		id: "LePetitBistro",
 		src: "/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg",
@@ -45,7 +74,7 @@ const restaurants = [
 	},
 	{
 		name: "Brasserie Saint-Germain",
-		type: "Français",
+		type: "français",
 		price: 30,
 		id: "BrasserieSaint-Germain",
 		src: "/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg",
@@ -55,7 +84,7 @@ const restaurants = [
 	},
 	{
 		name: "Sakura Sushi",
-		type: "Japonais",
+		type: "japonais",
 		price: 20,
 		id: "SakuraSushi",
 		src: "/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg",
@@ -65,7 +94,7 @@ const restaurants = [
 	},
 	{
 		name: "Ramen Ichiban",
-		type: "Japonais",
+		type: "japonais",
 		price: 18,
 		id: "RamenIchiban",
 		src: "/images/asian-rolls-with-herbs-spices.jpg",
@@ -75,7 +104,7 @@ const restaurants = [
 	},
 	{
 		name: "Burger Haven",
-		type: "Americain",
+		type: "americain",
 		price: 15,
 		id: "BurgerHaven",
 		src: "/images/flat-lay-american-food-with-america-flag.jpg",
@@ -85,7 +114,7 @@ const restaurants = [
 	},
 	{
 		name: "Smokey BBQ House",
-		type: "Americain",
+		type: "americain",
 		price: 22,
 		id: "SmokeyBBQHouse",
 		src: "/images/meat-slices-sauce-with-mashed-potato.jpg",
@@ -95,7 +124,7 @@ const restaurants = [
 	},
 	{
 		name: "El Rancho Grill",
-		type: "Mexicain",
+		type: "mexicain",
 		price: 17,
 		id: "ElRanchoGrill",
 		src: "/images/mexican-food-blue-background.jpg",
@@ -105,7 +134,7 @@ const restaurants = [
 	},
 	{
 		name: "MexiFusion",
-		type: "Mexicain",
+		type: "mexicain",
 		price: 19,
 		id: "Mexi-Fusion",
 		src: "/images/mexican-menu.jpg",
@@ -115,7 +144,7 @@ const restaurants = [
 	},
 	{
 		name: "Lahore Palace",
-		type: "Pakistanais",
+		type: "pakistanais",
 		price: 23,
 		id: "LahorePalace",
 		src: "/images/duc-van-pWYRJOSPMcY-unsplash.jpg",
@@ -125,7 +154,7 @@ const restaurants = [
 	},
 	{
 		name: "Karachi Delight",
-		type: "Pakistanais",
+		type: "pakistanais",
 		price: 21,
 		id: "KarachiDelight",
 		src: "/images/magic-mary-nEOzmjguwO0-unsplash.jpg",
@@ -135,7 +164,7 @@ const restaurants = [
 	},
 	{
 		name: "Trattoria Bella",
-		type: "Italien",
+		type: "italien",
 		price: 26,
 		id: "TrattoriaBella",
 		src: "/images/tomatoes-raw-pasta-near-italian-food.jpg",
@@ -145,7 +174,7 @@ const restaurants = [
 	},
 	{
 		name: "Osteria Napoli",
-		type: "Italien",
+		type: "italien",
 		price: 28,
 		id: "OsteriaNapoli",
 		src: "/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
@@ -155,7 +184,7 @@ const restaurants = [
 	},
 	{
 		name: "Green Delights",
-		type: "Vegan",
+		type: "vegan",
 		price: 20,
 		id: "GreenDelights",
 		src: "/images/assortment-delicious-food-ingredients.jpg",
@@ -165,7 +194,7 @@ const restaurants = [
 	},
 	{
 		name: "Végét'Horizon",
-		type: "Vegan",
+		type: "vegan",
 		price: 22,
 		id: "Végét'-Horizon",
 		src: "/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg",
@@ -186,76 +215,23 @@ const restaurantContainer = document.getElementById("restaurant-container");
 
 // Fonction pour afficher les restaurants en dynamique.
 function renderRestaurants(restaurantsList) {
-    restaurantContainer.innerHTML = "";
+	restaurantContainer.innerHTML = "";
 
-    // Regrouper les restaurants par type de cuisine.
-    const restaurantsByType = restaurantsList.reduce((acc, restaurant) => {
-        if (!acc[restaurant.type]) {
-            acc[restaurant.type] = [];
-        }
-        acc[restaurant.type].push(restaurant);
-        return acc;
-    }, {});
+	restaurantsList.forEach((restaurant) => {
+		const restaurantDiv = document.createElement("div");
+		restaurantDiv.classList.add("restaurant", restaurant.type);
+		restaurantDiv.id = restaurant.id;
 
-    // Créer un conteneur pour chaque type de cuisine.
-    for (const type in restaurantsByType) {
-        const typeContainer = document.createElement("div");
-        typeContainer.classList.add("type-container");
+		// Je génére le contenu de mes restaurants.
+		restaurantDiv.innerHTML = `
+            <h2>${restaurant.name}</h2>
+            <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
+            <p> <b>${restaurant.name}</b> - ${restaurant.description}</p>
+            <p class="price">Prix : ${restaurant.price}€</p>
+        `;
 
-        // Créer un titre pour le type de cuisine.
-        const typeTitle = document.createElement("h2");
-        typeTitle.textContent = type;
-        typeContainer.appendChild(typeTitle);
-
-        // Créer des paires de restaurants.
-        const restaurantPairs = [];
-        for (let i = 0; i < restaurantsByType[type].length; i += 2) {
-            restaurantPairs.push(restaurantsByType[type].slice(i, i + 2));
-        }
-
-        // Créer un conteneur pour chaque paire de restaurants.
-        restaurantPairs.forEach((pair) => {
-            const pairContainer = document.createElement("div");
-            pairContainer.classList.add("pair-container");
-
-            // Ajouter chaque restaurant de la paire au conteneur.
-            pair.forEach((restaurant) => {
-                const restaurantDiv = document.createElement("div");
-                restaurantDiv.classList.add("restaurant", restaurant.type);
-                restaurantDiv.id = restaurant.id;
-
-                restaurantDiv.innerHTML = `
-                    <img class="restaurant image" src="${restaurant.src}" alt="${restaurant.alt}" />
-                    <button class="descriptif-btn">Descriptif</button>
-                    <div class="descriptif-content">
-                        <p><b>${restaurant.name}</b> - ${restaurant.description}</p>
-                        <p class="price">Prix : ${restaurant.price}€</p>
-                    </div>
-                `;
-                pairContainer.appendChild(restaurantDiv);
-
-                // Ajout de l'écouteur d'événement pour le bouton "Descriptif".
-                const descriptifBtn = restaurantDiv.querySelector(".descriptif-btn");
-                const descriptifContent = restaurantDiv.querySelector(".descriptif-content");
-
-                descriptifBtn.addEventListener("click", () => {
-                    descriptifContent.classList.toggle("show");
-                });
-            });
-            typeContainer.appendChild(pairContainer);
-        });
-        restaurantContainer.appendChild(typeContainer);
-    }
-
-    // Gestion de la fermeture du menu déroulant au clique en dehors.
-    document.addEventListener("click", (event) => {
-        const descriptifContents = document.querySelectorAll(".descriptif-content");
-        descriptifContents.forEach((content) => {
-            if (!content.parentElement.contains(event.target)) {
-                content.classList.remove("show");
-            }
-        });
-    });
+		restaurantContainer.appendChild(restaurantDiv);
+	});
 }
 
 // ---------------------------
@@ -296,28 +272,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ------------------------
-
-/* const navImage = document.querySelector(".nav_image");
-const header = document.querySelector("header");
-const tablet = window.matchMedia("(min-width: 768px)");
-const mobile = window.matchMedia("(max-width: 768px)");
-
-window.onload = function () {
-
-    window.addEventListener('resize', function () {
-
-        if (tablet.matches) {
-            navImage.appendChild(dropdown);
-            button1.style.marginTop = "50px";
-            button1.style.marginLeft = "70px";
-            navImage.style.height = "200px";
-        }
-        else if (mobile.matches) {
-            header.appendChild(dropdown);
-            button1.style.marginLeft = "0px";
-            button1.style.marginTop = "15px";
-            button1.style.marginBottom = "15px";
-        }
-
-    });
-} */

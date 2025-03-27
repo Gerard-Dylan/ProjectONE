@@ -9,12 +9,12 @@ closeBtn.onclick = closeNav;
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    sidenav.classList.add("active");
+	sidenav.classList.add("active");
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    sidenav.classList.remove("active");
+	sidenav.classList.remove("active");
 }
 
 // ------------Affiche le menu déroulant-------------
@@ -33,6 +33,32 @@ document.addEventListener("click", (event) => {
 });
 
 // ---------------------------
+
+
+
+// ----------Deplacement du bouton du header dans la nav -------------------
+
+const bmobile = document.getElementById("buttonmobile");
+const btablet = document.getElementById("buttontablet");
+const header = document.querySelector("header");
+
+function deplacement() {
+
+	if (window.matchMedia("(min-width:768px)").matches) {
+		btablet.appendChild(bmobile);
+	} else {
+		header.appendChild(bmobile)
+
+	}
+
+}
+
+deplacement();
+window.addEventListener("resize", deplacement);
+
+//------------------------------
+
+
 
 // Constantes tableau pour les infos des restaurants.
 const restaurants = [

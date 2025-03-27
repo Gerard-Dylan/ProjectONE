@@ -37,6 +37,11 @@
     height: 150px;
 }
 
+.image1 {
+    height: 350px;
+    width: 300px;
+}
+
 header {
     background-color: var(--primary-color);
     text-align: center;
@@ -151,6 +156,16 @@ background-color: var(--primary-color);
     padding-top: 15px;
 }
 
+button {
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    font-family: ArsenalSC;
+    font-size: 15px;
+    padding-left: 63px;
+    padding-right: 63px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
 .dropdown-content {
     display: none;
@@ -169,6 +184,7 @@ background-color: var(--primary-color);
 }
 
 .card-content {
+    margin-bottom: 15px;
     margin-bottom: 15px;
 }
 
@@ -214,6 +230,129 @@ background-color: var(--primary-color);
 }
 
 /* ------------------------ */
+footer {
+    background-color: var(--secondary-color);
+
+    .container2 {
+        display: flex;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menuPc {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    header {
+
+        background-color: var(--primary-color);
+        text-align: center;
+
+        h1 {
+            font-family: ArsenalSC;
+            font-size: 45px;
+            background-color: var(--secondary-color);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 40px;
+            font-family: RoadRage;
+            background-color: var(--primary-color);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .burger_button,
+    .sidenav {
+        display: none;
+    }
+
+    .nav_image {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 25em;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: RoadRage;
+        font-size: 2em;
+        color: black;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .header_image {
+        display: none;
+
+    }
+
+    header {
+
+        background-color: var(--primary-color);
+        text-align: center;
+
+        h1 {
+            font-family: ArsenalSC;
+            font-size: 45px;
+            background-color: var(--primary-color);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+
+        p {
+            font-size: 40px;
+            font-family: RoadRage;
+            background-color: var(--primary-color);
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    }
+
+
+}
+
+/* @media screen and (min-width:992px) {
+
+    .nav_image {
+        background-image: none;
+        background-color: var(--secondary-color);
+    }
+
+    h1 {
+        background-color: var(--primary-color);
+    }
+} */
 
 #restaurant-container {
     display: flex;

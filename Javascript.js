@@ -263,37 +263,17 @@ function renderRestaurants(restaurantsList) {
 
 // Fonction pour filtré et trié les prix.
 function applyFilter() {
-	const isVegan = document.getElementById('vegan').checked;
-	const foodType = document.getElementById('foodType').value;
-	const sortOrder = document.getElementById('sortOrder').value;
-
-
-	if (isVegan && foodType !== "vegan") {
-		console.log("Repas vegan seulement.");
-		return;
-
-	}
-
-	const filterData = { isVegan, foodType, sortOrder };
-	console.log("Filtre sélectionné:", filterData);
 	const isVegan = document.getElementById("vegan").checked;
-	const foodType = document.getElementById("foodType").value.toLowerCase();
+	const foodType = document.getElementById("foodType").value;
 	const sortOrder = document.getElementById("sortOrder").value;
 
 	console.log("Filtre sélectionné:", { isVegan, foodType, sortOrder });
 
 	// Filtre suivant la séléction.
 	let filteredRestaurants = restaurants.filter((restaurant) => {
-        const restaurantType = restaurant.type.toLowerCase();
-
-        // Si je coche vegan je ne garde QUE les restaurants Vegan.
-        if (isVegan) return restaurantType === "vegan";
-
-        // Sinon, je filtre par type de nourriture sélectionné.
-        if (foodType && restaurantType !== foodType) return false;
-
-        return true;
-    });
+		if (isVegan) return restaurant.type === "vegan";
+		return foodType === "" || restaurant.type === foodType;
+	});
 
 	// Tri selon les prix.
 	if (sortOrder === "price_asc") {
@@ -305,31 +285,14 @@ function applyFilter() {
 	// Pour mettre à jour l'affichage avec les restaurants filtrés et triés.
 	renderRestaurants(filteredRestaurants);
 	dropdown.classList.remove("show");
-
 }
 
+// ---------------------------
 
-const navImage = document.querySelector(".nav_image");
-const header = document.querySelector("header");
-const tablet = window.matchMedia("(min-width: 768px)");
-const mobile = window.matchMedia("(max-width: 768px)");
+// J'affiche tous les restaurants au chargement de ma page.
+document.addEventListener("DOMContentLoaded", () => {
+	renderRestaurants(restaurants);
+});
 
-window.onload = function () {
 
-	window.addEventListener('resize', function () {
-
-		if (tablet.matches) {
-			navImage.appendChild(dropdown);
-			button1.style.marginTop = "50px";
-			button1.style.marginLeft = "70px";
-			navImage.style.height = "200px";
-		}
-		else if (mobile.matches) {
-			header.appendChild(dropdown);
-			button1.style.marginLeft = "0px";
-			button1.style.marginTop = "15px";
-			button1.style.marginBottom = "15px";
-		}
-
-	});
-}
+// ------------------------

@@ -23,11 +23,15 @@
     height: 100px;
 }
 
+<<<<<<< HEAD
 .container {
     display: flex;
     flex-direction: row-reverse;
     gap: 15em;
 }
+=======
+
+>>>>>>> origin/kevin
 
 .nav_image {
     background-image: url("./images/foie-gras-1024x683.png");
@@ -37,11 +41,14 @@
     height: 150px;
 }
 
+<<<<<<< HEAD
+=======
 .image1 {
     height: 350px;
     width: 300px;
 }
 
+>>>>>>> origin/kevin
 header {
     background-color: var(--primary-color);
     text-align: center;
@@ -185,7 +192,6 @@ button {
 
 .card-content {
     margin-bottom: 15px;
-    margin-bottom: 15px;
 }
 
 .btn {
@@ -199,37 +205,6 @@ button {
     letter-spacing: 0.05rem;
 }
 
-/* mediaquery resto affichage */
-
-@media (min-width: 768px) {
-    #restaurant-container {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--secondary-color);
-    }
-
-    .restaurant {
-        width: 50%;
-    }
-
-    .pair-container {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-    }
-
-    .restaurant img {
-        max-width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-    }
-
-    .descriptif-btn {
-        margin: 10px auto 20px;
-    }
-}
-
-/* ------------------------ */
 footer {
     background-color: var(--secondary-color);
 
@@ -358,7 +333,10 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+<<<<<<< HEAD
 }
+=======
+>>>>>>> origin/kevin
 
 #restaurant-container .type-container {
     width: 100% !important; 
@@ -377,6 +355,7 @@ footer {
 .restaurant {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
 }
 
 .restaurant .image {
@@ -408,6 +387,14 @@ footer {
     font-weight: bold;
     letter-spacing: 1px;
     margin: 10px auto 20px;
+=======
+
+    .image {
+        width: 100%;
+        max-width: 400px;
+        height: auto
+    }
+>>>>>>> origin/kevin
 }
 
 .descriptif-content {

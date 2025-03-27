@@ -297,6 +297,17 @@ footer {
 
 }
 
+/* @media screen and (min-width:992px) {
+
+    .nav_image {
+        background-image: none;
+        background-color: var(--secondary-color);
+    }
+
+    h1 {
+        background-color: var(--primary-color);
+    }
+} */
 
 #restaurant-container {
     display: flex;

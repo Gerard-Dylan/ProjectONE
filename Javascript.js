@@ -227,7 +227,7 @@ function applyFilter() {
 
 }
 
-const button1 = document.querySelector(".button_1");
+
 const navImage = document.querySelector(".nav_image");
 const header = document.querySelector("header");
 const tablet = window.matchMedia("(min-width: 768px)");
@@ -238,13 +238,13 @@ window.onload = function () {
 	window.addEventListener('resize', function () {
 
 		if (tablet.matches) {
-			navImage.appendChild(button1);
+			navImage.appendChild(dropdown);
 			button1.style.marginTop = "50px";
 			button1.style.marginLeft = "70px";
 			navImage.style.height = "200px";
 		}
 		else if (mobile.matches) {
-			header.appendChild(button1);
+			header.appendChild(dropdown);
 			button1.style.marginLeft = "0px";
 			button1.style.marginTop = "15px";
 			button1.style.marginBottom = "15px";

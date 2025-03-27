@@ -131,7 +131,7 @@ header p {
     padding-top: 15px;
 }
 
-button {
+.button1 {
     border-radius: 30px;
     background-color: var(--secondary-color);
     font-family: ArsenalSC;
@@ -288,7 +288,7 @@ footer {
 
     .container2 {
         display: flex;
-        text-align: center;
+        justify-content: space-around;
         padding-top: 5px;
         padding-bottom: 5px;
     }

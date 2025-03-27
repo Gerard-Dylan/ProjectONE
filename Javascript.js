@@ -23,7 +23,7 @@ button.addEventListener("click", () => {
 	dropdown.classList.toggle("show");
 });
 
-document.addEventListener("click", function (event) {
+document.addEventListener("click", (event) => {
 	if (!dropdown.contains(event.target)) {
 		dropdown.classList.remove("show");
 	}
@@ -299,12 +299,18 @@ function applyFilter() {
 	document.getElementById("foodType").value = "";
 	document.getElementById("sortOrder").value = "";
 
+	// J'affiche tous les restaurants au chargement de ma page.
+	document.addEventListener("DOMContentLoaded", () => {
+		renderRestaurants(restaurants);
+	});
 
 }
 
 
+
 const navImage = document.querySelector(".nav_image");
 const header = document.querySelector("header");
+const button1 = document.querySelector(".button1")
 const tablet = window.matchMedia("(min-width: 768px)");
 const mobile = window.matchMedia("(max-width: 768px)");
 

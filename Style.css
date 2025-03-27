@@ -67,13 +67,12 @@ header h1 {
     padding-bottom: 20px;
 }
 
-header p {
-    font-size: 40px;
-    font-family: RoadRage;
-    background-color: var(--primary-color);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+    p {
+        font-size: 40px;
+        font-family: RoadRage;
+        background-color: var(--primary-color);
+        padding: 20px;
+    }
 
 #restaurant-container{
 
@@ -87,7 +86,7 @@ background-color: var(--secondary-color);
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #f5f1e3;
+    background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
 }
@@ -108,7 +107,7 @@ background-color: var(--secondary-color);
 }
 
 .sidenav a:hover {
-    color: black;
+    color: #111;
 }
 
 .sidenav.active {

@@ -1,5 +1,4 @@
 
-/* menu burger */
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
@@ -17,48 +16,20 @@ function closeNav() {
 	sidenav.classList.remove("active");
 }
 
-// ------------Affiche le menu déroulant-------------
-
 const dropdown = document.querySelector(".dropdown");
 const button = dropdown.querySelector("button");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", function (event) {
 	dropdown.classList.toggle("show");
 });
 
-document.addEventListener("click", (event) => {
+document.addEventListener("click", function (event) {
 	if (!dropdown.contains(event.target)) {
 		dropdown.classList.remove("show");
 	}
 });
 
 // ---------------------------
-
-
-
-// ----------Deplacement du bouton du header dans la nav -------------------
-
-const bmobile = document.getElementById("buttonmobile");
-const btablet = document.getElementById("buttontablet");
-const header = document.querySelector("header");
-
-function deplacement() {
-
-	if (window.matchMedia("(min-width:768px)").matches) {
-		btablet.appendChild(bmobile);
-	} else {
-		header.appendChild(bmobile)
-
-	}
-
-}
-
-deplacement();
-window.addEventListener("resize", deplacement);
-
-//------------------------------
-
-
 
 // Constantes tableau pour les infos des restaurants.
 const restaurants = [
@@ -292,6 +263,19 @@ function renderRestaurants(restaurantsList) {
 
 // Fonction pour filtré et trié les prix.
 function applyFilter() {
+	const isVegan = document.getElementById('vegan').checked;
+	const foodType = document.getElementById('foodType').value;
+	const sortOrder = document.getElementById('sortOrder').value;
+
+
+	if (isVegan && foodType !== "vegan") {
+		console.log("Repas vegan seulement.");
+		return;
+
+	}
+
+	const filterData = { isVegan, foodType, sortOrder };
+	console.log("Filtre sélectionné:", filterData);
 	const isVegan = document.getElementById("vegan").checked;
 	const foodType = document.getElementById("foodType").value.toLowerCase();
 	const sortOrder = document.getElementById("sortOrder").value;
@@ -322,20 +306,30 @@ function applyFilter() {
 	renderRestaurants(filteredRestaurants);
 	dropdown.classList.remove("show");
 
-
-	// Je remet mes filtres à zéro après l'application.
-    document.getElementById("vegan").checked = false;
-    document.getElementById("foodType").value = "";
-    document.getElementById("sortOrder").value = "";
-
 }
 
-// ---------------------------
 
-// J'affiche tous les restaurants au chargement de ma page.
-document.addEventListener("DOMContentLoaded", () => {
-	renderRestaurants(restaurants);
-});
+const navImage = document.querySelector(".nav_image");
+const header = document.querySelector("header");
+const tablet = window.matchMedia("(min-width: 768px)");
+const mobile = window.matchMedia("(max-width: 768px)");
 
+window.onload = function () {
 
-// ------------------------
+	window.addEventListener('resize', function () {
+
+		if (tablet.matches) {
+			navImage.appendChild(dropdown);
+			button1.style.marginTop = "50px";
+			button1.style.marginLeft = "70px";
+			navImage.style.height = "200px";
+		}
+		else if (mobile.matches) {
+			header.appendChild(dropdown);
+			button1.style.marginLeft = "0px";
+			button1.style.marginTop = "15px";
+			button1.style.marginBottom = "15px";
+		}
+
+	});
+}

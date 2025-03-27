@@ -9,110 +9,90 @@
 
 </head>
 
-<body>
+<nav>
 
-
-    <nav>
-        <!-- Menu classique  pour tablette et PC -->
-        <div class="nav_image">
-            <ul class="menuPc">
-                <li><a href="">À propos</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Accueil</a></li>
+    <div class="nav_image">
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">A propos</a></li>
             </ul>
-            <div class="container">
-                <img src="images/restaurant_location_icon_146860-removebg-preview.png" alt=logo-du-site class="logo">
-                <div id="buttontablet"></div>
+        </div>
+        <div>
+            <a href="#" id="openBtn" class="burger_button">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </div>
+    </div>
+
+</nav>
 
 
-                <div id="mySidenav" class="sidenav">
+<header>
 
-                    <a id="closeBtn" href="#" class="close">&times;</a>
-                    <!-- liste du menu burger -->
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">A propos</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <!-- Ceci est le bouton d'ouverture du menu burger -->
-                    <a href="#" id="openBtn" class="burger_button">
-                        <span class="burger-icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </a>
-                </div>
+    <h1>LES BONNES <br> ADRESSES</h1>
+
+    <p>Trouvez les adresses incontournables, des pépites cachées et des expériences culinaires uniques. Bon appétit !
+    </p>
+
+
+    <div class="header_image">
+        <img src="./images/image_header.jpeg" alt="Foie gras" height="350px" width="300px">
+    </div>
+
+    <div class="dropdown">
+        <button class="button_1">Je choisis ma bonne adresse !</button>
+
+        <div class="dropdown-content">
+            <div class="card-content">
+                <label>
+                    <input type="checkbox" id="vegan"> Vegan
+                </label>
             </div>
-        </div>
-    </nav>
-
-
-    <header>
-
-        <h1>LES BONNES <br> ADRESSES</h1>
-
-        <p>Trouvez les adresses incontournables, des pépites cachées et des expériences culinaires uniques. Bon appétit
-            !
-        </p>
-
-
-        <div class="header_image">
-            <img class="image1" src="./images/image_header.jpeg" alt="Foie gras">
-        </div>
-
-
-        <div class="dropdown">
-            <button id="buttonmobile">Je choisis ma bonne adresse !</button>
-
-            <div class="dropdown-content">
-                <div class="card-content">
-                    <label>
-                        <input type="checkbox" id="vegan"> Vegan
-                    </label>
-                </div>
-                <div class="card-content">
-                    <label for="foodType">Type de nourriture</label>
-                    <select id="foodType">
-                        <option value="">Sélectionner</option>
-                        <option value="français">Français</option>
-                        <option value="japonais">Japonais</option>
-                        <option value="americain">Americain</option>
-                        <option value="mexicain">Mexicain</option>
-                        <option value="pakistanais">Pakistanais</option>
-                        <option value="italien">Italien</option>
-                        <option value="vegan">Vegan</option>
-                    </select>
-                </div>
-                <div class="card-content">
-                    <label for="sortOrder">Trier par</label>
-                    <select id="sortOrder">
-                        <option value="">Sélectionner</option>
-                        <option value="price_asc">Prix croissant</option>
-                        <option value="price_desc">Prix décroissant</option>
-                    </select>
-                </div>
-                <button class="btn" onclick="applyFilter()">Appliquer</button>
+            <div class="card-content">
+                <label for="foodType">Type de nourriture</label>
+                <select id="foodType">
+                    <option value="">Sélectionner</option>
+                    <option value="français">Français</option>
+                    <option value="japonais">Japonais</option>
+                    <option value="americain">Americain</option>
+                    <option value="mexicain">Mexicain</option>
+                    <option value="pakistanais">Pakistanais</option>
+                    <option value="italien">Italien</option>
+                    <option value="vegan">Vegan</option>
+                </select>
             </div>
+            <div class="card-content">
+                <label for="sortOrder">Trier par</label>
+                <select id="sortOrder">
+                    <option value="">Sélectionner</option>
+                    <option value="price_asc">Prix croissant</option>
+                    <option value="price_desc">Prix décroissant</option>
+                </select>
+            </div>
+            <button class="btn" onclick="applyFilter()">Appliquer</button>
         </div>
+    </div>
+    </div>
 
 
 
-
-
-
-    </header>
+</header>
 
 
 
     <div id="restaurant-container"></div>
 
 
+    <script src="Javascript.js"></script>
 
-
-
+</body>
 
 
     <footer>
@@ -124,7 +104,7 @@
         </div>
         <p>© 2025 K.L.A.D SQUAD </p>
     </footer>
-    <script src="Javascript.js"></script>
+
 </body>
 
 

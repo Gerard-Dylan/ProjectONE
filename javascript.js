@@ -51,7 +51,7 @@ const restaurants = [
 		type: "Français",
 		price: 30,
 		id: "BrasserieSaint-Germain",
-		src: "/images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg",
+		src: "./images/mashed-potatoes-with-fried-eggplants-pickles-cream-sauce-plate.jpg",
 		alt: "Photo du plat de la Brasserie",
 		description:
 			"Une cuisine raffinée avec des produits du terroir et des vins soigneusement sélectionnés.",
@@ -61,7 +61,7 @@ const restaurants = [
 		type: "Japonais",
 		price: 20,
 		id: "SakuraSushi",
-		src: "/images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg",
+		src: "./images/top-view-nigiri-sushi-with-tuna-bamboo-leaf-served-with-pickled-ginger-slices-wasabi-plate.jpg",
 		alt: "Photo du plat du Sakura Sushi",
 		description:
 			"Un bar à sushi où poissons frais et présentation élégante se rencontrent pour une expérience gastronomique unique.",
@@ -71,7 +71,7 @@ const restaurants = [
 		type: "Japonais",
 		price: 18,
 		id: "RamenIchiban",
-		src: "/images/asian-rolls-with-herbs-spices.jpg",
+		src: "./images/asian-rolls-with-herbs-spices.jpg",
 		alt: "Photo de plat du Ramen Ichiban",
 		description:
 			"Savourez de délicieux bols de ramen aux bouillons parfumés et aux nouilles faites maison.",
@@ -91,7 +91,7 @@ const restaurants = [
 		type: "Americain",
 		price: 22,
 		id: "SmokeyBBQHouse",
-		src: "/images/meat-slices-sauce-with-mashed-potato.jpg",
+		src: "./images/meat-slices-sauce-with-mashed-potato.jpg",
 		alt: "Photo de plat du Smokey BBQ",
 		description:
 			"Dégustez des viandes fumées lentement, nappées de sauce barbecue maison, dans un cadre chaleureux et convivial.",
@@ -101,7 +101,7 @@ const restaurants = [
 		type: "Mexicain",
 		price: 17,
 		id: "ElRanchoGrill",
-		src: "/images/mexican-food-blue-background.jpg",
+		src: "./images/mexican-food-blue-background.jpg",
 		alt: "Photo de plat du El Rancho Grill",
 		description:
 			"Un mélange explosif de saveurs avec des tacos épicés, des fajitas grillées et des margaritas rafraîchissantes.",
@@ -111,7 +111,7 @@ const restaurants = [
 		type: "Mexicain",
 		price: 19,
 		id: "Mexi-Fusion",
-		src: "/images/mexican-menu.jpg",
+		src: "./images/mexican-menu.jpg",
 		alt: "Photo de plat du Mexifusion",
 		description:
 			"Découvrez une cuisine tex-mex revisitée avec des ingrédients frais et une touche moderne.",
@@ -121,7 +121,7 @@ const restaurants = [
 		type: "Pakistanais",
 		price: 23,
 		id: "LahorePalace",
-		src: "/images/duc-van-pWYRJOSPMcY-unsplash.jpg",
+		src: "./images/duc-van-pWYRJOSPMcY-unsplash.jpg",
 		alt: "Photo de plat du Lahore Palace",
 		description:
 			"Un voyage culinaire avec des currys épicés, des grillades tandoori et des pains naan moelleux.",
@@ -141,7 +141,7 @@ const restaurants = [
 		type: "Italien",
 		price: 26,
 		id: "TrattoriaBella",
-		src: "/images/tomatoes-raw-pasta-near-italian-food.jpg",
+		src: "./images/tomatoes-raw-pasta-near-italian-food.jpg",
 		alt: "Photo de plat du Trattoria Bella",
 		description:
 			"Plongez dans l'Italie avec des pâtes fraîches, des pizzas au feu de bois et des tiramisus maison.",
@@ -151,7 +151,7 @@ const restaurants = [
 		type: "Italien",
 		price: 28,
 		id: "OsteriaNapoli",
-		src: "/images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
+		src: ".images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
 		alt: "Photo de plat du Osteria Napoli",
 		description:
 			"Un restaurant authentique où les saveurs méditerranéennes se marient à une ambiance familiale et chaleureuse.",
@@ -161,7 +161,7 @@ const restaurants = [
 		type: "Vegan",
 		price: 20,
 		id: "GreenDelights",
-		src: "/images/assortment-delicious-food-ingredients.jpg",
+		src: "./images/assortment-delicious-food-ingredients.jpg",
 		alt: "Photo de plat du Green Delights",
 		description:
 			"Cuisine végane créative et gourmande, avec des ingrédients frais et locaux pour un plaisir 100% naturel.",
@@ -171,7 +171,7 @@ const restaurants = [
 		type: "Vegan",
 		price: 22,
 		id: "Végét'-Horizon",
-		src: "/images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg",
+		src: "./images/flat-lay-vegan-burgers-wooden-board-with-copy-space.jpg",
 		alt: "Photo de plat du Végét'Horizon",
 		description:
 			"Une expérience culinaire végane savoureuse, alliant fraîcheur, éthique et créativité.",

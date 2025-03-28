@@ -151,7 +151,7 @@ const restaurants = [
 		type: "Italien",
 		price: 28,
 		id: "OsteriaNapoli",
-		src: ".images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
+		src: "./images/homemade-spaghetti-pasta-with-grated-cheese-cherry-tomatoes-container.jpg",
 		alt: "Photo de plat du Osteria Napoli",
 		description:
 			"Un restaurant authentique où les saveurs méditerranéennes se marient à une ambiance familiale et chaleureuse.",

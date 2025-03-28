@@ -81,7 +81,7 @@ const restaurants = [
 		type: "Americain",
 		price: 15,
 		id: "BurgerHaven",
-		src: "/images/flat-lay-american-food-with-america-flag.jpg",
+		src: "./images/flat-lay-american-food-with-america-flag.jpg",
 		alt: "Photo de plat du Burger Haven",
 		description:
 			"Savourez des burgers juteux, des frites croustillantes et des milkshakes onctueux dans une ambiance rétro typiquement américaine.",
@@ -131,7 +131,7 @@ const restaurants = [
 		type: "Pakistanais",
 		price: 21,
 		id: "KarachiDelight",
-		src: "/images/magic-mary-nEOzmjguwO0-unsplash.jpg",
+		src: "./images/magic-mary-nEOzmjguwO0-unsplash.jpg",
 		alt: "Photo de plat du Karachi Delight",
 		description:
 			"Une explosion de saveurs authentiques avec des plats mijotés et des épices traditionnelles du Pakistan.",

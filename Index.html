@@ -9,12 +9,22 @@
 </head>
 
 
+<body>
+    <nav>
+        <!-- Menu classique  pour tablette et PC -->
 
-<nav>
-
-    <div class="nav_image">
-        <div class="container">
-            <img src="images/restaurant_location_icon_146860-removebg-preview.png" alt=logo-du-site class="logo">
+        <div class="nav_image">
+            <div class=menutablet>
+                <ul class="menuPc">
+                    <li><a href="">À propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Accueil</a></li>
+                </ul>
+                <div class="container">
+                    <img src="images/restaurant_location_icon_146860-removebg-preview.png" alt=logo-du-site
+                        class="logo">
+                </div>
+            </div>
             <div id="mySidenav" class="sidenav">
                 <a id="closeBtn" href="#" class="close">&times;</a>
                 <ul>
@@ -33,75 +43,87 @@
                 </a>
             </div>
         </div>
-    </div>
-
-</nav>
-
-
-<header>
-
-    <h1>LES BONNES <br> ADRESSES</h1>
-
-    <p>Trouvez les adresses incontournables, des pépites cachées et des expériences culinaires uniques. Bon appétit !
-    </p>
-
-
-    <div class="header_image">
-        <img src="./images/image_header.jpeg" height="350px" width="300px">
-    </div>
-
-
-    <div class="dropdown">
-        <button>Je choisis ma bonne adresse !</button>
-
-        <div class="dropdown-content">
-            <div class="card-content">
-                <label>
-                    <input type="checkbox" id="vegan"> Vegan
-                </label>
-            </div>
-            <div class="card-content">
-                <label for="foodType">Type de nourriture</label>
-                <select id="foodType">
-                    <option value="">Sélectionner</option>
-                    <option value="français">Français</option>
-                    <option value="japonais">Japonais</option>
-                    <option value="americain">Americain</option>
-                    <option value="mexicain">Mexicain</option>
-                    <option value="pakistanais">Pakistanais</option>
-                    <option value="italien">Italien</option>
-                    <option value="vegan">Vegan</option>
-                </select>
-            </div>
-            <div class="card-content">
-                <label for="sortOrder">Trier par</label>
-                <select id="sortOrder">
-                    <option value="">Sélectionner</option>
-                    <option value="price_asc">Prix croissant</option>
-                    <option value="price_desc">Prix décroissant</option>
-                </select>
-            </div>
-            <button class="btn" onclick="applyFilter()">Appliquer</button>
         </div>
-    </div>
+
+    </nav>
+
+
+    <header>
+
+        <h1>LES BONNES <br> ADRESSES</h1>
+
+        <p>Trouvez les adresses incontournables, des pépites cachées et des expériences culinaires uniques. Bon appétit
+            !
+        </p>
+
+
+        <div class="header_image">
+            <img class="image1" src="./images/image_header.jpeg" alt="Foie gras">
+        </div>
+
+
+        <div class="dropdown">
+            <button>Je choisis ma bonne adresse !</button>
+
+            <div class="dropdown-content">
+                <div class="card-content">
+                    <label>
+                        <input type="checkbox" id="vegan"> Vegan
+                    </label>
+                </div>
+                <div class="card-content">
+                    <label for="foodType">Type de nourriture</label>
+                    <select id="foodType">
+                        <option value="">Sélectionner</option>
+                        <option value="français">Français</option>
+                        <option value="japonais">Japonais</option>
+                        <option value="americain">Americain</option>
+                        <option value="mexicain">Mexicain</option>
+                        <option value="pakistanais">Pakistanais</option>
+                        <option value="italien">Italien</option>
+                        <option value="vegan">Vegan</option>
+                    </select>
+                </div>
+                <div class="card-content">
+                    <label for="sortOrder">Trier par</label>
+                    <select id="sortOrder">
+                        <option value="">Sélectionner</option>
+                        <option value="price_asc">Prix croissant</option>
+                        <option value="price_desc">Prix décroissant</option>
+                    </select>
+                </div>
+                <button class="btn" onclick="applyFilter()">Appliquer</button>
+            </div>
+        </div>
 
 
 
 
-</header>
+    </header>
 
-<body>
-    
+
+
     <div id="restaurant-container"></div>
 
-    <script src="Javascript.js"></script>
 
+
+
+
+
+    <footer>
+        <footer>
+            <div class="container2">
+                <img src="./images/logo_facebook.png" alt="logo Facebook" title="Logo1">
+                <img src="./images/logo_X.png" alt="logo X" title="Logo2">
+                <img src="./images/logo_instagram.png" alt="logo Instagram" title="Logo3">
+                <img src="./images/logo_telephone.png" alt="logo telephone" title="Logo4">
+            </div>
+        </footer>
+    </footer>
+    <script src="Javascript.js"></script>
 </body>
 
 
-<footer>
-    <p>© 2025 K.L.A.D SQUAD </p>
-</footer>
 
 
 

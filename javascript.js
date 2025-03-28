@@ -41,7 +41,7 @@ const restaurants = [
 		type: "Français",
 		price: 25,
 		id: "LePetitBistro",
-		src: ":/images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg",
+		src: "./images/top-view-grilled-chicken-fillet-served-with-bulgur-vegetables-white-wine.jpg",
 		alt: "Photo du plat du bistro",
 		description:
 			"Un cadre intime pour savourer des plats traditionnels comme le bœuf bourguignon et la tarte tatin.",

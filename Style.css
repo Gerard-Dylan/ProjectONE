@@ -171,16 +171,6 @@ button {
     letter-spacing: 0.05rem;
 }
 
-footer {
-    background-color: var(--secondary-color);
-
-    .container2 {
-        display: flex;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
 
 /* mediaquery resto affichage */
 
